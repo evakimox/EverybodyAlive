@@ -5,9 +5,24 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_mage1_right</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\bg_coverback</background>
+    <background>background\bg_cover</background>
+    <background>background\bg_maindial</background>
+    <background>background\bg_iteminfo</background>
+    <background>background\bg_save</background>
+    <background>background\bg_charinfo</background>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_mage</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_stage1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
