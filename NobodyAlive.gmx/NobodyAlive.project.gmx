@@ -6,7 +6,9 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_mage1_right</sprite>
+    <sprites name="main_chars">
+      <sprite>sprites\spr_mage1_right</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_coverback</background>
@@ -18,10 +20,16 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\obj_mage</object>
+    <objects name="Assesory">
+      <object>objects\obj_button1</object>
+    </objects>
+    <objects name="main_chars">
+      <object>objects\obj_mage</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_stage1</room>
+    <room>rooms\rm_intro</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

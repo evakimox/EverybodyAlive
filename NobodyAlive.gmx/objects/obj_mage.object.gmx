@@ -56,22 +56,22 @@ if (keyboard_check(ord('W'))&amp;&amp;keyboard_check(ord('A'))){
     y = y-(spd*1.414/2);
     x = x-(spd*1.414/2);
 }
-if (keyboard_check(ord('W'))&amp;&amp;keyboard_check(ord('D'))){
+else if (keyboard_check(ord('W'))&amp;&amp;keyboard_check(ord('D'))){
     y = y-(spd*1.414/2);
     x = x+(spd*1.414/2);
 }
-if (keyboard_check(ord('S'))&amp;&amp;keyboard_check(ord('A'))){
+else if (keyboard_check(ord('S'))&amp;&amp;keyboard_check(ord('A'))){
     y = y+(spd*1.414/2);
     x = x-(spd*1.414/2);
 }
-if (keyboard_check(ord('W'))&amp;&amp;keyboard_check(ord('D'))){
+else if (keyboard_check(ord('W'))&amp;&amp;keyboard_check(ord('D'))){
     y = y+(spd*1.414/2);
     x = x+(spd*1.414/2);
 }
 
 
 //single key:
-if keyboard_check(ord('W')){
+else if keyboard_check(ord('W')){
     y = y-spd;
 }
 else if keyboard_check(ord('S')){
