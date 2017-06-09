@@ -51,7 +51,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//double key:
+            <string>/*
+else if keyboard_check(ord('A')){
+    x = x-spd;
+}
+else if keyboard_check(ord('D')){
+    x = x+spd;
+}
+*/
+
+if keyboard_check(ord('A')){
+    sprite_index = spr_mage1_left;
+}
+else if keyboard_check(ord('D')){
+    sprite_index = spr_mage1_right;
+}
+
+//double key:
 if (keyboard_check(ord('W'))&amp;&amp;keyboard_check(ord('A'))){
     y = y-(spd*1.414/2);
     x = x-(spd*1.414/2);
