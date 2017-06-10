@@ -20,6 +20,6 @@
   <width>69</width>
   <height>84</height>
   <frames>
-    <frame index="0">images\spr_mage1_right_0.png</frame>
+    <frame index="0">images\spr_mage_1_right_0.png</frame>
   </frames>
 </sprite>

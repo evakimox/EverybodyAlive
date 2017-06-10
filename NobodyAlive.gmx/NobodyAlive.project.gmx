@@ -7,9 +7,12 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="main_chars">
-      <sprite>sprites\spr_mage1_right</sprite>
-      <sprite>sprites\spr_mage1_left</sprite>
+      <sprite>sprites\spr_mage_1_right</sprite>
+      <sprite>sprites\spr_archer_1_right</sprite>
+      <sprite>sprites\spr_swordsman_1_right</sprite>
+      <sprite>sprites\spr_shooter_1_right</sprite>
     </sprites>
+    <sprite>sprites\spr_temp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_coverback</background>
@@ -22,13 +25,16 @@
   <paths name="paths"/>
   <objects name="objects">
     <objects name="Assesory">
-      <object>objects\obj_button1</object>
+      <object>objects\obj_buttonStartGame</object>
+      <object>objects\obj_buttonReadSave</object>
+      <object>objects\obj_buttonExit</object>
     </objects>
     <objects name="main_chars">
       <object>objects\obj_mage</object>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_save</room>
     <room>rooms\rm_stage1</room>
     <room>rooms\rm_intro</room>
   </rooms>
