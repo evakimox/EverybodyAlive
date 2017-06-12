@@ -7,10 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="main_chars">
-      <sprite>sprites\spr_mage_1_right</sprite>
-      <sprite>sprites\spr_archer_1_right</sprite>
-      <sprite>sprites\spr_swordsman_1_right</sprite>
-      <sprite>sprites\spr_shooter_1_right</sprite>
+      <sprite>sprites\spr_swordman_noarm</sprite>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
   </sprites>
@@ -24,19 +21,36 @@
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <objects name="Assesory">
+    <objects name="buttons">
       <object>objects\obj_buttonStartGame</object>
-      <object>objects\obj_buttonReadSave</object>
       <object>objects\obj_buttonExit</object>
+      <object>objects\obj_buttonproperty</object>
+      <object>objects\obj_buttonitem</object>
+      <object>objects\obj_buttonread</object>
+      <object>objects\obj_buttonsave</object>
+      <object>objects\obj_buttonsetting</object>
+      <object>objects\obj_buttonhelp</object>
     </objects>
     <objects name="main_chars">
       <object>objects\obj_mage</object>
+      <object>objects\obj_swordsman</object>
+    </objects>
+    <objects name="controls">
+      <object>objects\obj_hotkeys</object>
+      <object>objects\obj_ButtonsHolder</object>
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_save</room>
-    <room>rooms\rm_stage1</room>
     <room>rooms\rm_intro</room>
+    <room>rooms\rm_stage1</room>
+    <room>rooms\rm_skills</room>
+    <rooms name="utility">
+      <room>rooms\rm_property</room>
+      <room>rooms\rm_item</room>
+      <room>rooms\rm_save</room>
+      <room>rooms\rm_setting</room>
+      <room>rooms\rm_help</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
