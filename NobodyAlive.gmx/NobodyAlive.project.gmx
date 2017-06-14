@@ -21,6 +21,12 @@
       <sprite>sprites\spr_armor</sprite>
       <sprite>sprites\spr_speed</sprite>
     </sprites>
+    <sprites name="button">
+      <sprite>sprites\spr_start</sprite>
+      <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_readMain</sprite>
+      <sprite>sprites\spr_toitem</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_coverback</background>
@@ -36,7 +42,8 @@
   <objects name="objects">
     <objects name="buttons">
       <object>objects\obj_buttonStartGame</object>
-      <object>objects\obj_buttonExit</object>
+      <object>objects\obj_ReadSaveMain</object>
+      <object>objects\obj_ExitGame</object>
       <object>objects\obj_buttonproperty</object>
       <object>objects\obj_buttonitem</object>
       <object>objects\obj_buttonread</object>
@@ -61,9 +68,6 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_skills</room>
-    <room>rooms\rm_intro</room>
-    <room>rooms\rm_stage1</room>
     <rooms name="utility">
       <room>rooms\rm_property</room>
       <room>rooms\rm_item</room>
@@ -71,6 +75,9 @@
       <room>rooms\rm_setting</room>
       <room>rooms\rm_help</room>
     </rooms>
+    <room>rooms\rm_skills</room>
+    <room>rooms\rm_intro</room>
+    <room>rooms\rm_stage1</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
