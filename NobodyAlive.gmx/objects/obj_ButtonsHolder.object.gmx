@@ -25,12 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(177,455,obj_buttonproperty);
-instance_create(290,455,obj_buttonitem);
-instance_create(456,455,obj_buttonsave);
-instance_create(599,455,obj_buttonread);
-instance_create(742,455,obj_buttonsetting);
-instance_create(856,455,obj_buttonhelp);
+            <string>instance_create(150,460,obj_buttonproperty);
+instance_create(290,460,obj_buttonitem);
+instance_create(475,460,obj_buttonread);
+instance_create(660,460,obj_buttonsetting);
+instance_create(800,460,obj_buttonhelp);
 </string>
           </argument>
         </arguments>

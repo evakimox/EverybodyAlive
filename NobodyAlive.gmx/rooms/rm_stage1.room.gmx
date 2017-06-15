@@ -52,8 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_swordsman" x="352" y="224" name="inst_7C22EBB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stonestage1" x="0" y="0" name="inst_F53D531E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_swordsman_control" x="64" y="64" name="inst_69AC947C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="288" y="160" name="inst_F53D531E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
