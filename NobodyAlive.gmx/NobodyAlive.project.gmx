@@ -11,7 +11,7 @@
     </sprites>
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
-      <sprite>sprites\spr_stage1_stone</sprite>
+      <sprite>sprites\spr_floor</sprite>
     </sprites>
     <sprites name="skill">
       <sprite>sprites\spr_atk</sprite>
@@ -35,6 +35,7 @@
     <sprites name="char_for_look">
       <sprite>sprites\spr_sword_onstone</sprite>
     </sprites>
+    <sprite>sprites\spr_slime</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stage1</background>
@@ -51,6 +52,13 @@
     <font>fonts\ComicSansMS</font>
   </fonts>
   <objects name="objects">
+    <objects name="main_chars">
+      <object>objects\obj_mage</object>
+      <object>objects\obj_swordsman</object>
+    </objects>
+    <objects name="stage_barriers">
+      <object>objects\obj_stonestage1</object>
+    </objects>
     <objects name="buttons">
       <object>objects\obj_buttonStartGame</object>
       <object>objects\obj_ReadSaveMain</object>
@@ -62,17 +70,10 @@
       <object>objects\obj_buttonsetting</object>
       <object>objects\obj_buttonhelp</object>
     </objects>
-    <objects name="main_chars">
-      <object>objects\obj_mage</object>
-      <object>objects\obj_swordsman</object>
-    </objects>
     <objects name="controls">
       <object>objects\obj_hotkeys</object>
       <object>objects\obj_ButtonsHolder</object>
       <object>objects\obj_swordsman_printer</object>
-    </objects>
-    <objects name="stage_barriers">
-      <object>objects\obj_stonestage1</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>

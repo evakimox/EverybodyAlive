@@ -67,16 +67,21 @@ walking_spr = spr_swordman_noarm;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-x_movement = 1;
-y_movement = 1;
+            <string>///movements including collision check with barriers
+
+    x_movement = 1;
+    y_movement = 1;
+
 
 if keyboard_check(ord('A')){
     sprite_index = walking_spr;
     image_xscale = -1;
     image_speed = set_image_speed;
     if(place_meeting(x-spd,y,obj_stonestage1)){
-        x_movement = 0;
+        while(!place_meeting(x-1,y,obj_stonestage1)){
+            x = x-1;
+        }
+        x_movement = -0.2;
     }
     else{
         x_movement = 1;
@@ -87,7 +92,10 @@ if keyboard_check(ord('D')){
     image_xscale = 1;
     image_speed = set_image_speed;
     if(place_meeting(x+spd,y,obj_stonestage1)){
-        x_movement = 0;
+        while(!place_meeting(x-1,y,obj_stonestage1)){
+            x = x+1;
+        }
+        x_movement = -0.2;
     }
     else{
         x_movement = 1;
@@ -96,7 +104,10 @@ if keyboard_check(ord('D')){
 if keyboard_check(ord('S')){
     image_speed = set_image_speed;
     if(place_meeting(x,y+spd,obj_stonestage1)){
-        y_movement = 0;
+        while(!place_meeting(x,y+1,obj_stonestage1)){
+            y = y+1;
+        }
+        y_movement = -0.2;
     }
     else{
         y_movement = 1;
@@ -105,7 +116,10 @@ if keyboard_check(ord('S')){
 if keyboard_check(ord('W')){
     image_speed = set_image_speed;
     if(place_meeting(x,y-spd,obj_stonestage1)){
-        y_movement = 0;
+        while(!place_meeting(x,y-1,obj_stonestage1)){
+            y = y-1;
+        }
+        y_movement = -0.2;
     }
     else{
         y_movement = 1;
@@ -172,8 +186,8 @@ else if keyboard_check(ord('D')){
           <argument>
             <kind>1</kind>
             <string>draw_self();
-speedValue = string(spd);
-draw_text(100,100,"spd = "+speedValue);
+//speedValue = string(spd);
+//draw_text(100,100,"spd = "+speedValue);
 </string>
           </argument>
         </arguments>
