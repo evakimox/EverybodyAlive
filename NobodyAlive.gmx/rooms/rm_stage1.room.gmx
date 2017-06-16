@@ -54,6 +54,8 @@
     <instance objName="obj_swordsman" x="256" y="320" name="inst_7C22EBB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="224" y="128" name="inst_F53D531E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="576" y="320" name="inst_41E487DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="416" y="224" name="inst_640C49F7" locked="0" code="" scaleX="0.5" scaleY="0.516666650772095" colour="4294967295" rotation="0"/>
+    <instance objName="obj_toSkills" x="32" y="480" name="inst_0CF6D82E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

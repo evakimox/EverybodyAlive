@@ -12,7 +12,12 @@
   <showcolour>-1</showcolour>
   <code>//read save files
 
-// if no previous files then
+// if no previous files then it is initial condition
+global.num_hun = 0;
+
+
+
+//swordsman 
 global.sword_atk=15;
 global.sword_crit=5;
 global.sword_hp=100;

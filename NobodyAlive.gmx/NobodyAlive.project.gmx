@@ -35,7 +35,12 @@
     <sprites name="char_for_look">
       <sprite>sprites\spr_sword_onstone</sprite>
     </sprites>
-    <sprite>sprites\spr_slime</sprite>
+    <sprites name="enemy">
+      <sprite>sprites\spr_slime</sprite>
+    </sprites>
+    <sprites name="drop_item">
+      <sprite>sprites\spr_hun</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stage1</background>
@@ -74,6 +79,7 @@
       <object>objects\obj_hotkeys</object>
       <object>objects\obj_ButtonsHolder</object>
       <object>objects\obj_swordsman_printer</object>
+      <object>objects\obj_hunPrinter</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>
@@ -84,6 +90,12 @@
       <object>objects\obj_speed</object>
     </objects>
     <object>objects\obj_toSkills</object>
+    <objects name="enemy">
+      <object>objects\obj_slime</object>
+    </objects>
+    <objects name="drop_item">
+      <object>objects\obj_hun</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
