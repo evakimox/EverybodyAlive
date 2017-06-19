@@ -45,6 +45,7 @@
     <sprites name="drop_item">
       <sprite>sprites\spr_hun</sprite>
     </sprites>
+    <sprite>sprites\spr_dedtell</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stage1</background>
@@ -103,10 +104,12 @@
     <objects name="bullets">
       <object>objects\obj_meleehitbox</object>
     </objects>
+    <object>objects\obj_dedTell</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_skills</room>
+    <room>rooms\rm_intro</room>
+    <room>rooms\rm_stage1</room>
     <rooms name="utility">
       <room>rooms\rm_property</room>
       <room>rooms\rm_item</room>
@@ -114,8 +117,7 @@
       <room>rooms\rm_setting</room>
       <room>rooms\rm_help</room>
     </rooms>
-    <room>rooms\rm_stage1</room>
-    <room>rooms\rm_intro</room>
+    <room>rooms\rm_skills</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
