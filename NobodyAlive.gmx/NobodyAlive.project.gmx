@@ -8,6 +8,10 @@
   <sprites name="sprites">
     <sprites name="main_chars">
       <sprite>sprites\spr_swordman_noarm</sprite>
+      <sprite>sprites\spr_sword_walk</sprite>
+      <sprite>sprites\spr_sword_attack</sprite>
+      <sprite>sprites\spr_sword_stand</sprite>
+      <sprite>sprites\spr_sword_hitbox</sprite>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
@@ -95,6 +99,9 @@
     </objects>
     <objects name="drop_item">
       <object>objects\obj_hun</object>
+    </objects>
+    <objects name="bullets">
+      <object>objects\obj_meleehitbox</object>
     </objects>
   </objects>
   <rooms name="rooms">

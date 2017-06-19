@@ -25,8 +25,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_speed = 0;
-spd = 3;
+            <string>///setup values for enemy
+
+spr_enemyType = spr_slime;
+image_speed = 0.1;
+
+//random movement
+spd = 0.5;
+movingDir = -1;
+image_xscale = movingDir/2;
+
+//hp and armor and atk
+hp = 80;
+atk = 5;
+
+
 </string>
           </argument>
         </arguments>
@@ -54,9 +67,45 @@ amt = random(5)+2;
 for(i=0;i&lt;amt;i++){
     left_right = random(1)-1;
     up_down = random(1)-1;
-    instance_create(x+random(50)*left_right,y+random(25)*up_down,obj_hun);
+    instance_create(x+(random(50)+30)*left_right,y+(random(25)+15)*up_down,obj_hun);
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///change direction of random moving
+LastDir = -1;
+if(movingDir ==0){
+    movingDir = -1*LastDir;
+}
+else if(movingDir == -1){
+    LastDir = -1;
+    movingDir = -1*LastDir;
+}
+else if(movingDir ==1){
+    LastDir = 1;
+    movingDir = -1*LastDir;
+}
+image_xscale = movingDir/2;
 </string>
           </argument>
         </arguments>
@@ -79,27 +128,41 @@ for(i=0;i&lt;amt;i++){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///check if getting hit by player
+            <string>///check if hp&lt;=0
+
+if(hp&lt;=0){
+    instance_destroy();
+    }
 
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="9" enumb="90">
       <action>
         <libid>1</libid>
-        <id>203</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_kill_object</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///moving the slime horizontally with random direction
+x = movingDir*spd+x;
+
+if (alarm[0]==-1){
+    alarm = 300;
+}
+</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>
