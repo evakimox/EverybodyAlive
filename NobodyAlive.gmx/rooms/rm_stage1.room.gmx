@@ -10,7 +10,13 @@
   <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>bg_chooser = random(1);
+if(bg_chooser&gt;=0.5){
+    background_index = bg_stage_forest;
+}
+else{
+    background_index = bg_stage1;
+    }</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -56,6 +56,7 @@
     <background>background\bg_save</background>
     <background>background\bg_charinfo</background>
     <background>background\bg_skilltree</background>
+    <background>background\bg_stage_forest</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">

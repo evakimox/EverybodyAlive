@@ -122,6 +122,7 @@ image_speed = 0;
             <kind>1</kind>
             <string>//this another piece of code sends char update info to control
 global.sword_atk = global.sword_atk + 1;
+global.num_hun-=1;
 </string>
           </argument>
         </arguments>
