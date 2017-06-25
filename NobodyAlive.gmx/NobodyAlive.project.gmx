@@ -12,6 +12,7 @@
       <sprite>sprites\spr_sword_attack</sprite>
       <sprite>sprites\spr_sword_stand</sprite>
       <sprite>sprites\spr_sword_hitbox</sprite>
+      <sprite>sprites\spr_die</sprite>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
@@ -121,9 +122,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_stage1</room>
-    <room>rooms\rm_skills</room>
     <room>rooms\rm_intro</room>
+    <room>rooms\rm_skills</room>
+    <room>rooms\rm_stage1</room>
     <rooms name="utility">
       <room>rooms\rm_property</room>
       <room>rooms\rm_item</room>

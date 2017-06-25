@@ -10,8 +10,8 @@
   <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
-  <code>bg_chooser = random(1);
-if(bg_chooser&gt;=0.5){
+  <code>bg_chooser = random(43);
+if(bg_chooser&gt;=21){
     background_index = bg_stage_forest;
 }
 else{

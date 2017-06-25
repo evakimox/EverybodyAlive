@@ -3,8 +3,8 @@
   <spriteName>spr_dedtell</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-1</depth>
-  <persistent>0</persistent>
+  <depth>-999</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_alpha = 0.001;
 solid_flag = 0;
+wait_count = 300;
 </string>
           </argument>
         </arguments>
@@ -49,19 +50,25 @@ solid_flag = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(image_alpha&lt;0.9&amp;&amp;(!solid_flag)){
+            <string>///animation about bluring in
+
+if(image_alpha&lt;0.96&amp;&amp;(!solid_flag)){
+    //appearing from very vague
     image_alpha += 0.01;
 }
-if(image_alpha&gt;=0.9){
+if(image_alpha&gt;=0.96){
     solid_flag = 1; 
-}
-if(solid_flag){
-    image_alpha -=0.01;
-}
-
-if(image_alpha&lt;=0){
     room_goto(rm_skills);
 }
+if(solid_flag){
+    image_alpha-=0.01;
+}
+if(image_alpha&lt;=0.009){
+    instance_destroy();
+}
+
+
+
 </string>
           </argument>
         </arguments>
