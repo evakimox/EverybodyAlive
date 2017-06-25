@@ -6,7 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprites name="main_chars">
+    <sprites name="chars_animation">
       <sprite>sprites\spr_swordman_noarm</sprite>
       <sprite>sprites\spr_sword_walk</sprite>
       <sprite>sprites\spr_sword_attack</sprite>
@@ -35,9 +35,14 @@
       <sprite>sprites\spr_help</sprite>
       <sprite>sprites\spr_setting</sprite>
       <sprite>sprites\spr_read</sprite>
+      <sprite>sprites\spr_restart</sprite>
+      <sprite>sprites\spr_readAfterDeath</sprite>
     </sprites>
-    <sprites name="char_for_look">
+    <sprites name="utility">
       <sprite>sprites\spr_sword_onstone</sprite>
+      <sprite>sprites\spr_hpBar</sprite>
+      <sprite>sprites\spr_swordProfile</sprite>
+      <sprite>sprites\spr_hpFilling</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_slime</sprite>
@@ -72,11 +77,14 @@
     </objects>
     <objects name="buttons">
       <object>objects\obj_buttonStartGame</object>
+      <object>objects\obj_restart</object>
       <object>objects\obj_ReadSaveMain</object>
       <object>objects\obj_ExitGame</object>
       <object>objects\obj_buttonproperty</object>
+      <object>objects\obj_profile_sword</object>
       <object>objects\obj_buttonitem</object>
       <object>objects\obj_buttonread</object>
+      <object>objects\obj_readAfter</object>
       <object>objects\obj_buttonsave</object>
       <object>objects\obj_buttonsetting</object>
       <object>objects\obj_buttonhelp</object>
@@ -86,6 +94,7 @@
       <object>objects\obj_ButtonsHolder</object>
       <object>objects\obj_swordsman_printer</object>
       <object>objects\obj_hunPrinter</object>
+      <object>objects\obj_createHPbar</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>
@@ -106,11 +115,15 @@
       <object>objects\obj_meleehitbox</object>
     </objects>
     <object>objects\obj_dedTell</object>
+    <objects name="Displaything">
+      <object>objects\obj_hpfilling</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_intro</room>
     <room>rooms\rm_stage1</room>
+    <room>rooms\rm_skills</room>
+    <room>rooms\rm_intro</room>
     <rooms name="utility">
       <room>rooms\rm_property</room>
       <room>rooms\rm_item</room>
@@ -118,7 +131,6 @@
       <room>rooms\rm_setting</room>
       <room>rooms\rm_help</room>
     </rooms>
-    <room>rooms\rm_skills</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
