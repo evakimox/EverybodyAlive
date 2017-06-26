@@ -8,6 +8,33 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>pos1 = 137;
+pos2 = 189;
+pos3 = 235;
+pos4 = 284;
+pos5 = 335;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -27,24 +54,29 @@
             <kind>1</kind>
             <string>draw_self();
 
-draw_set_color(c_gray);
+draw_set_color(c_black);
 draw_set_font(ComicSansMS);
+draw_set_alpha(0.3);
 
-draw_text(601, 146,"HP: "+string(global.sword_hp));
-draw_text(601, 194,"atk: "+string(global.sword_atk));
-draw_text(601, 242,"armor: "+string(global.sword_armor));
-draw_text(601, 290,"crit: "+string(global.sword_crit)+"%");
-draw_text(601, 338,"spd: "+string(global.sword_speed));
+draw_text(601, pos1,"   "+string(global.sword_hp));
+draw_text(601, pos2,"   "+string(global.sword_atk));
+draw_text(601, pos3,"   "+string(global.sword_armor));
+draw_text(601, pos4,"   "+string(global.sword_crit)+"%");
+draw_text(601, pos5,"   "+string(global.sword_speed));
 
-
-draw_set_color(c_white);
+gooseYellow = make_color_rgb(255,246,244);
+draw_set_color(gooseYellow);
 draw_set_font(ComicSansMS);
+draw_set_alpha(1);
 
-draw_text(600, 145,"HP: "+string(global.sword_hp));
-draw_text(600, 193,"atk: "+string(global.sword_atk));
-draw_text(600, 241,"armor: "+string(global.sword_armor));
-draw_text(600, 289,"crit: "+string(global.sword_crit)+"%");
-draw_text(600, 337,"spd: "+string(global.sword_speed));
+draw_text(600, pos1-2,"   "+string(global.sword_hp));
+draw_text(600, pos2-2,"   "+string(global.sword_atk));
+draw_text(600, pos3-2,"   "+string(global.sword_armor));
+draw_text(600, pos4-2,"   "+string(global.sword_crit)+"%");
+draw_text(600, pos5-2,"   "+string(global.sword_speed));
+
+//draw_set_alpha(1);
+
 </string>
           </argument>
         </arguments>
