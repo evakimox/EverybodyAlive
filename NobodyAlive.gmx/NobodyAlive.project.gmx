@@ -123,6 +123,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
+    <room>rooms\rm_intro</room>
     <rooms name="utility">
       <room>rooms\rm_property</room>
       <room>rooms\rm_item</room>
@@ -130,7 +131,6 @@
       <room>rooms\rm_setting</room>
       <room>rooms\rm_help</room>
     </rooms>
-    <room>rooms\rm_intro</room>
     <room>rooms\rm_skills</room>
     <room>rooms\rm_stage1</room>
   </rooms>
