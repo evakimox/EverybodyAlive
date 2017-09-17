@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>///set door image unchange
 image_speed = 0;
+bool_DoorOpen = false;
+DoorDestination = rm_stage2;
 </string>
           </argument>
         </arguments>
@@ -52,9 +54,17 @@ image_speed = 0;
             <string>///check if stage cleared open
 if(!instance_exists(obj_slime)){
     image_index = 1;
+    bool_DoorOpen = true;
 }
 else{
     image_index = 0;
+    bool_DoorOpen = false;
+}
+
+if(bool_DoorOpen){
+    if(place_meeting(x,y,obj_swordsman)){
+        room_goto(DoorDestination);
+    }
 }
 </string>
           </argument>
