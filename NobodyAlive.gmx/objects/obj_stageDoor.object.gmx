@@ -29,6 +29,8 @@
 image_speed = 0;
 bool_DoorOpen = false;
 DoorDestination = rm_stage2;
+DestRoomx=0;
+DestRoomy=0; 
 </string>
           </argument>
         </arguments>
@@ -61,8 +63,12 @@ else{
     bool_DoorOpen = false;
 }
 
+
+
 if(bool_DoorOpen){
     if(place_meeting(x,y,obj_swordsman)){
+        obj_swordsman.x = DestRoomx;
+        obj_swordsman.y = DestRoomy;        
         room_goto(DoorDestination);
     }
 }

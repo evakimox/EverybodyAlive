@@ -57,7 +57,6 @@ else{
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_swordsman" x="64" y="288" name="inst_7C22EBB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_setting;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="864" y="256" name="inst_4EE7E659" locked="0" code="" scaleX="2.61666655540466" scaleY="3.25833344459534" colour="4294967295" rotation="0"/>
