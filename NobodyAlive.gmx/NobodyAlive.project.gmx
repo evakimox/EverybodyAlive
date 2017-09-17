@@ -17,6 +17,7 @@
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
       <sprite>sprites\spr_floor</sprite>
+      <sprite>sprites\spr_stoneseg</sprite>
     </sprites>
     <sprites name="skill">
       <sprite>sprites\spr_atk</sprite>
@@ -52,6 +53,8 @@
       <sprite>sprites\spr_hun</sprite>
     </sprites>
     <sprite>sprites\spr_dedtell</sprite>
+    <sprite>sprites\spr_chestpurplr</sprite>
+    <sprite>sprites\spr_door</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_stage1</background>
@@ -66,6 +69,11 @@
     <background>background\bg_setting</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\char_movement_ctrl.gml</script>
+    <script>scripts\following_the_character_view.gml</script>
+    <script>scripts\chest_opener.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
   </fonts>
@@ -97,6 +105,7 @@
       <object>objects\obj_swordsman_printer</object>
       <object>objects\obj_hunPrinter</object>
       <object>objects\obj_createHPbar</object>
+      <object>objects\obj_stageDoor</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>
@@ -120,6 +129,7 @@
     <objects name="Displaything">
       <object>objects\obj_hpfilling</object>
     </objects>
+    <object>objects\obj_chest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
