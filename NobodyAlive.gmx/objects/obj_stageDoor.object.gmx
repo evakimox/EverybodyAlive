@@ -66,9 +66,9 @@ else{
 
 
 if(bool_DoorOpen){
-    if(place_meeting(x,y,obj_swordsman)){
-        obj_swordsman.x = DestRoomx;
-        obj_swordsman.y = DestRoomy;        
+    if(place_meeting(x,y,obj_main)){
+        obj_main.x = DestRoomx;
+        obj_main.y = DestRoomy;        
         room_goto(DoorDestination);
     }
 }

@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>0</visible>
   <depth>-999</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -82,46 +82,22 @@ yspd = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///attack 
-
-if keyboard_check(ord('J')){
-    state = char_state.attack;
-    follower.sprite_index = spr_sword_attack;
-    follower.image_index = 0;
-    follower.image_speed = 0.02;
-    myHitBox = instance_create(x,y,obj_meleehitbox);
-    myHitBox.image_xscale = follower.image_xscale;
-}
-
-if(state == char_state.attack){
-    if(follower.image_index &gt; image_number - 1){
-        state = char_state.normal;
+            <string>///movement determination
+if(state == char_state.normal){
+    char_movement_ctrl();
+    if keyboard_check(ord('J')){
+        state = char_state.attack;       
     }
 }
+if(state == char_state.attack){
+    follower.sprite_index = spr_sword_attack;
+    follower.image_speed = 0.2;    
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///movement determination
-if(state ==char_state.normal){
-    char_movement_ctrl();
+    if(follower.image_index &gt; 3){    
+        myHitBox = instance_create(x,y,obj_meleehitbox);
+        myHitBox.image_xscale = follower.image_xscale;
+        state = char_state.normal;
+    }
 }
 check_barrier_collision();
 </string>

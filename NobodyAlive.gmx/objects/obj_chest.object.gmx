@@ -49,8 +49,17 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///some code when character is close press space to open
-chest_opener();
+            <string>///chest open cond
+bool_left = place_meeting(x-5,y,obj_main);
+bool_right = place_meeting(x+5,y,obj_main);
+bool_up = place_meeting(x,y+5,obj_main);
+bool_down = place_meeting(x,y-5,obj_main);
+
+if(bool_left or bool_right or bool_up or bool_down){
+    if(keyboard_check_released(vk_space)){
+        image_index = 1;
+    }
+}
 </string>
           </argument>
         </arguments>

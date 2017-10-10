@@ -51,7 +51,8 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 2;
+            <string>///没有骚操作
+image_index = 2;
 
 </string>
           </argument>
@@ -75,7 +76,8 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 0;
+            <string>///没有骚操作
+image_index = 0;
 </string>
           </argument>
         </arguments>
@@ -98,7 +100,8 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 0;
+            <string>///没有骚操作
+image_index = 0;
 
 </string>
           </argument>
@@ -120,9 +123,10 @@ image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(global.num_hun&gt;0){
-global.sword_atk = global.sword_atk + 1;
-global.num_hun-=1;
+            <string>///加点
+if(global.num_hun&gt;0){
+    global.sword_atk = global.sword_atk + 1;
+    global.num_hun-=1;
 }
 </string>
           </argument>
@@ -174,7 +178,8 @@ if(global.num_hun&lt;=0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_index = 1;
+            <string>///没有骚操作
+image_index = 1;
 </string>
           </argument>
         </arguments>

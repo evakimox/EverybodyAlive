@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_meeting(x,y,obj_swordsman)){
+            <string>///auto pick up
+if(place_meeting(x,y,obj_main)){
     global.num_hun+=1;
     instance_destroy();
 }

@@ -15,7 +15,8 @@ if xspd<0 {
     follower.image_xscale = -1;
     follower.image_speed = set_image_speed;
 }
-if go_up || go_down {
+if yspd!=0 {
+    follower.sprite_index = walking_spr;
     follower.image_speed = set_image_speed;
 }
 

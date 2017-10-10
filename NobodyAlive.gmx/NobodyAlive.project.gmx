@@ -73,7 +73,6 @@
   <scripts name="scripts">
     <script>scripts\char_movement_ctrl.gml</script>
     <script>scripts\following_the_character_view.gml</script>
-    <script>scripts\chest_opener.gml</script>
     <script>scripts\room_background_radomizer.gml</script>
     <script>scripts\check_barrier_collision.gml</script>
   </scripts>
@@ -105,7 +104,6 @@
       <object>objects\obj_buttonhelp</object>
     </objects>
     <objects name="controls">
-      <object>objects\obj_hotkeys</object>
       <object>objects\obj_ButtonsHolder</object>
       <object>objects\obj_swordsman_printer</object>
       <object>objects\obj_hunPrinter</object>

@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>pos1 = 137;
+            <string>///每行字位置
+
+pos1 = 137;
 pos2 = 189;
 pos3 = 235;
 pos4 = 284;
@@ -52,7 +54,8 @@ pos5 = 335;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
+            <string>///每行字打出来，
+draw_self();
 
 draw_set_color(c_black);
 draw_set_font(ComicSansMS);
@@ -75,7 +78,7 @@ draw_text(600, pos3-2,"   "+string(global.sword_armor));
 draw_text(600, pos4-2,"   "+string(global.sword_crit)+"%");
 draw_text(600, pos5-2,"   "+string(global.sword_speed));
 
-//draw_set_alpha(1);
+
 
 </string>
           </argument>
