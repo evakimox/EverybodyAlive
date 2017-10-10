@@ -1,96 +1,62 @@
-///movements including collision check with barriers
+//keyboard control
+go_up = keyboard_check(ord('W'));
+go_down = keyboard_check(ord('S'));
+go_left = keyboard_check(ord('A'));
+go_right = keyboard_check(ord('D'));
 
-    x_movement = 1;
-    y_movement = 1;
-
-//collision check: (fake) 
-if keyboard_check(ord('A')){
-    sprite_index = walking_spr;
-    image_xscale = -1;
-    image_speed = set_image_speed;
-    if(place_meeting(x-spd,y,obj_stonestage1)){
-        //lookat that later
-        while(!place_meeting(x-1,y,obj_stonestage1)){
-            x = x-1;
-        }
-        x_movement = -0.2;
-    }
-    else{
-        x_movement = 1;
-    }
+//control animation
+if xspd>0 {
+    follower.sprite_index = walking_spr;
+    follower.image_xscale = 1;
+    follower.image_speed = set_image_speed;
 }
-if keyboard_check(ord('D')){
-    sprite_index = walking_spr;
-    image_xscale = 1;
-    image_speed = set_image_speed;
-    if(place_meeting(x+spd,y,obj_stonestage1)){
-        while(!place_meeting(x-1,y,obj_stonestage1)){
-            x = x+1;
-        }
-        x_movement = -0.2;
-    }
-    else{
-        x_movement = 1;
-    }
+if xspd<0 {
+    follower.sprite_index = walking_spr;
+    follower.image_xscale = -1;
+    follower.image_speed = set_image_speed;
 }
-if keyboard_check(ord('S')){
-    image_speed = set_image_speed;
-    if(place_meeting(x,y+spd,obj_stonestage1)){
-        while(!place_meeting(x,y+1,obj_stonestage1)){
-            y = y+1;
-        }
-        y_movement = -0.2;
-    }
-    else{
-        y_movement = 1;
-    }
+if go_up || go_down {
+    follower.image_speed = set_image_speed;
 }
-if keyboard_check(ord('W')){
-    image_speed = set_image_speed;
-    if(place_meeting(x,y-spd,obj_stonestage1)){
-        while(!place_meeting(x,y-1,obj_stonestage1)){
-            y = y-1;
-        }
-        y_movement = -0.2;
-    }
-    else{
-        y_movement = 1;
-    }
-}
-else if keyboard_check(vk_nokey){
-    sprite_index = standing_spr;
-}
-    
 
 //double key:
-if (keyboard_check(ord('W'))&&keyboard_check(ord('A'))){
-    y = y-(spd*1.414/2)*y_movement;
-    x = x-(spd*1.414/2)*x_movement;
+if (go_up && go_left){
+    yspd = -(spd*1.414/2);
+    xspd = -(spd*1.414/2);
 }
-else if (keyboard_check(ord('W'))&&keyboard_check(ord('D'))){
-    y = y-(spd*1.414/2)*y_movement;
-    x = x+(spd*1.414/2)*x_movement;
+else if (go_up && go_right){
+    yspd = -(spd*1.414/2);
+    xspd = +(spd*1.414/2);
 }
-else if (keyboard_check(ord('S'))&&keyboard_check(ord('A'))){
-    y = y+(spd*1.414/2)*y_movement;
-    x = x-(spd*1.414/2)*x_movement;
+else if (go_down && go_left){
+    yspd = +(spd*1.414/2);
+    xspd = -(spd*1.414/2);
 }
-else if (keyboard_check(ord('S'))&&keyboard_check(ord('D'))){
-    y = y+(spd*1.414/2)*y_movement;
-    x = x+(spd*1.414/2)*x_movement;
+else if (go_down && go_right){
+    yspd = +(spd*1.414/2);
+    xspd = +(spd*1.414/2);
 }
-
-
 //single key:
-else if keyboard_check(ord('W')){
-    y = y-spd*y_movement;
+else if go_up{
+    yspd = -spd;
+    xspd = 0;
 }
-else if keyboard_check(ord('S')){
-    y = y+spd*y_movement;
+else if go_down{
+    yspd = spd;
+    xspd = 0;
 }
-else if keyboard_check(ord('A')){
-    x = x-spd*x_movement;
+else if go_left{
+    yspd = 0;
+    xspd = -spd;
 }
-else if keyboard_check(ord('D')){
-    x = x+spd*x_movement;
+else if go_right{
+    yspd = 0;
+    xspd = spd;
+}
+//no control key pressing
+else if !go_up && !go_down && !go_left && !go_right {
+    yspd = 0;
+    xspd = 0;
+    follower.sprite_index = standing_spr;
+    follower.image_speed = 0;
 }

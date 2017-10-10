@@ -2,14 +2,14 @@
 <sprite>
   <type>0</type>
   <xorig>39</xorig>
-  <yorigin>36</yorigin>
-  <colkind>2</colkind>
+  <yorigin>48</yorigin>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
   <bboxmode>2</bboxmode>
-  <bbox_left>3</bbox_left>
-  <bbox_right>61</bbox_right>
-  <bbox_top>0</bbox_top>
+  <bbox_left>27</bbox_left>
+  <bbox_right>50</bbox_right>
+  <bbox_top>15</bbox_top>
   <bbox_bottom>81</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -17,7 +17,7 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>90</width>
+  <width>93</width>
   <height>82</height>
   <frames>
     <frame index="0">images\spr_sword_attack_0.png</frame>

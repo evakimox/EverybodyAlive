@@ -13,6 +13,7 @@
       <sprite>sprites\spr_sword_stand</sprite>
       <sprite>sprites\spr_sword_hitbox</sprite>
       <sprite>sprites\spr_die</sprite>
+      <sprite>sprites\spr_maincharacter</sprite>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
@@ -73,6 +74,8 @@
     <script>scripts\char_movement_ctrl.gml</script>
     <script>scripts\following_the_character_view.gml</script>
     <script>scripts\chest_opener.gml</script>
+    <script>scripts\room_background_radomizer.gml</script>
+    <script>scripts\check_barrier_collision.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
@@ -81,6 +84,8 @@
     <objects name="main_chars">
       <object>objects\obj_mage</object>
       <object>objects\obj_swordsman</object>
+      <object>objects\obj_main</object>
+      <object>objects\obj_charsprfollower</object>
     </objects>
     <objects name="stage_barriers">
       <object>objects\obj_stonestage1</object>
@@ -135,9 +140,9 @@
     <room>rooms\rm_init</room>
     <rooms name="stages">
       <room>rooms\rm_stage1</room>
+      <room>rooms\rm_bossStage</room>
       <room>rooms\rm_stage2</room>
       <room>rooms\rm_chestroom</room>
-      <room>rooms\rm_bossStage</room>
     </rooms>
     <room>rooms\rm_intro</room>
     <rooms name="utility">

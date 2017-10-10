@@ -10,21 +10,7 @@
   <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
-  <code>enum char_statemachine{
-    walk,
-    about_to_hit_barrier,
-    attack,
-    die,
-    pick
-    }
-
-bg_chooser = random(43);
-if(bg_chooser&gt;=21){
-    background_index = bg_stage_forest;
-}
-else{
-    background_index = bg_stage1;
-}</code>
+  <code>room_background_radomizer();</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -55,7 +41,7 @@ else{
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="-1" objName="obj_swordsman" xview="0" yview="0" wview="960" hview="540" xport="0" yport="0" wport="1024" hport="768" hborder="320" vborder="0" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="obj_main" xview="0" yview="0" wview="960" hview="540" xport="0" yport="0" wport="1024" hport="768" hborder="320" vborder="0" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -65,7 +51,6 @@ else{
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_swordsman" x="128" y="288" name="inst_7C22EBB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="224" y="160" name="inst_F53D531E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="576" y="320" name="inst_41E487DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="1184" y="256" name="inst_640C49F7" locked="0" code="" scaleX="0.533333361148834" scaleY="0.727272748947144" colour="4294967295" rotation="0"/>
@@ -80,6 +65,7 @@ else{
     <instance objName="obj_stonestage1" x="768" y="320" name="inst_A6D8E3C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="1280" y="96" name="inst_A800C8E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination  = rm_stage2;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_main" x="64" y="288" name="inst_C4534D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

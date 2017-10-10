@@ -27,11 +27,11 @@
             <kind>1</kind>
             <string>/// determine how filled it is
 
-if(instance_exists(obj_swordsman)){
-    if(obj_swordsman.hp&lt;0){
-        obj_swordsman.hp = 0;
+if(instance_exists(obj_main)){
+    if(obj_main.hp&lt;0){
+        obj_main.hp = 0;
     }
-    howbig = obj_swordsman.hp/global.sword_hp;
+    howbig = obj_main.hp/global.sword_hp;
     image_xscale = howbig;
 }
 else{
@@ -86,8 +86,8 @@ following_the_character_view(679,63);
 draw_self();
 draw_set_color(c_white);
 draw_set_font(ComicSansMS);
-if(instance_exists(obj_swordsman)){
-    hpValue = string(obj_swordsman.hp);
+if(instance_exists(obj_main)){
+    hpValue = string(obj_main.hp);
     hpMax = string(global.sword_hp);
     draw_text_transformed(800+view_xview[0],50+view_yview[0],"hp: "+hpValue+"/"+hpMax,0.6,0.6,0);
 }
