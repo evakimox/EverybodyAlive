@@ -31,24 +31,10 @@
 }
 state = char_state.normal;
 
-//properties apply
-atk = global.sword_atk;
-crit = global.sword_crit;
-hp = global.sword_hp;
-regen = global.sword_regen;
-armor = global.sword_armor;
-spd = global.sword_speed * 0.5;
+//apply builds accordingly
+swordman_create();
 
-//sprite choices
-
-//general properties
-set_image_speed = 0.2;
-
-
-//walking sprites for three levels
-walking_spr = spr_sword_walk;
-standing_spr = spr_sword_stand;
-
+//create character mask
 follower = instance_create(x,y,obj_charsprfollower);
 follower.sprite_index = standing_spr;
 
@@ -56,7 +42,9 @@ follower.sprite_index = standing_spr;
 xspd = 0;
 yspd = 0;
 
-//attacking sprites
+//general properties
+set_image_speed = 0.2;
+
 
 
 
@@ -82,7 +70,7 @@ yspd = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///movement determination
+            <string>///movement &amp; attack
 if(state == char_state.normal){
     char_movement_ctrl();
     if keyboard_check(ord('J')){
@@ -90,16 +78,39 @@ if(state == char_state.normal){
     }
 }
 if(state == char_state.attack){
-    follower.sprite_index = spr_sword_attack;
+    follower.sprite_index = attacking_spr;
     follower.image_speed = 0.2;    
-
-    if(follower.image_index &gt; 3){    
+    MaxImages = sprite_get_number(attacking_spr);
+    if(follower.image_index &gt;= MaxImages-1){    
         myHitBox = instance_create(x,y,obj_meleehitbox);
         myHitBox.image_xscale = follower.image_xscale;
         state = char_state.normal;
     }
 }
 check_barrier_collision();
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///assign calculated movement
+vspeed = yspd;
+hspeed = xspd;
 </string>
           </argument>
         </arguments>
@@ -133,29 +144,6 @@ if(hp&lt;=0){
         instance_destroy();
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///assign calculated movement
-vspeed = yspd;
-hspeed = xspd;
 </string>
           </argument>
         </arguments>

@@ -7,13 +7,20 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="chars_animation">
-      <sprite>sprites\spr_swordman_noarm</sprite>
-      <sprite>sprites\spr_sword_walk</sprite>
-      <sprite>sprites\spr_sword_attack</sprite>
-      <sprite>sprites\spr_sword_stand</sprite>
-      <sprite>sprites\spr_sword_hitbox</sprite>
       <sprite>sprites\spr_die</sprite>
       <sprite>sprites\spr_maincharacter</sprite>
+      <sprites name="swordman">
+        <sprite>sprites\spr_sword_walk</sprite>
+        <sprite>sprites\spr_sword_stand</sprite>
+        <sprite>sprites\spr_sword_hitbox</sprite>
+        <sprite>sprites\spr_sword_attack</sprite>
+        <sprite>sprites\spr_swordman_noarm</sprite>
+      </sprites>
+      <sprites name="mage">
+        <sprite>sprites\spr_mage_walk</sprite>
+        <sprite>sprites\spr_mage_stand</sprite>
+        <sprite>sprites\spr_mage_attack</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
@@ -75,6 +82,8 @@
     <script>scripts\following_the_character_view.gml</script>
     <script>scripts\room_background_radomizer.gml</script>
     <script>scripts\check_barrier_collision.gml</script>
+    <script>scripts\swordman_create.gml</script>
+    <script>scripts\mage_create.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
@@ -136,13 +145,13 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
+    <room>rooms\rm_intro</room>
     <rooms name="stages">
       <room>rooms\rm_stage1</room>
       <room>rooms\rm_bossStage</room>
       <room>rooms\rm_stage2</room>
       <room>rooms\rm_chestroom</room>
     </rooms>
-    <room>rooms\rm_intro</room>
     <rooms name="utility">
       <room>rooms\rm_property</room>
       <room>rooms\rm_item</room>
