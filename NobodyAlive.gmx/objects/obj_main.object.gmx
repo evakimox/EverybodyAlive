@@ -29,7 +29,7 @@
     normal,
     attack
 }
-//char_state = normal;
+state = char_state.normal;
 
 //properties apply
 atk = global.sword_atk;
@@ -84,20 +84,21 @@ yspd = 0;
             <kind>1</kind>
             <string>///attack 
 
-if keyboard_check_pressed(ord('J')){
-    //char_state = attack;
+if keyboard_check(ord('J')){
+    state = char_state.attack;
     follower.sprite_index = spr_sword_attack;
-    follower.image_speed = 0.4;
+    follower.image_index = 0;
+    follower.image_speed = 0.02;
     myHitBox = instance_create(x,y,obj_meleehitbox);
     myHitBox.image_xscale = follower.image_xscale;
 }
-/*
-if(char_state == attack){
+
+if(state == char_state.attack){
     if(follower.image_index &gt; image_number - 1){
-        char_state = normal;
+        state = char_state.normal;
     }
 }
-*/
+
 </string>
           </argument>
         </arguments>
@@ -119,9 +120,9 @@ if(char_state == attack){
           <argument>
             <kind>1</kind>
             <string>///movement determination
-//if(char_state == normal){
+if(state ==char_state.normal){
     char_movement_ctrl();
-//}
+}
 check_barrier_collision();
 </string>
           </argument>
