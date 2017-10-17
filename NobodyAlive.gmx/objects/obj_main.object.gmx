@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_maincharacter</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>-999</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -32,7 +32,21 @@
 state = char_state.normal;
 
 //apply builds accordingly
-swordman_create();
+atk = global.sword_atk;
+crit = global.sword_crit;
+hp = global.sword_hp;
+regen = global.sword_regen;
+armor = global.sword_armor;
+spd = global.sword_speed * 0.5;
+
+//create main character sprite
+if(global.main_index&gt;=21) {
+    mage_create();
+}
+else{
+    swordman_create();
+}
+
 
 //create character mask
 follower = instance_create(x,y,obj_charsprfollower);

@@ -53,7 +53,7 @@ if(instance_exists(obj_main)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///when main die, destroy object
+            <string>///after main die animation, destroy object
 if(image_alpha&lt;=0.05){
     instance_destroy();
 }

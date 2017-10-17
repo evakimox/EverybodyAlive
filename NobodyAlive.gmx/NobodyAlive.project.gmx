@@ -90,8 +90,6 @@
   </fonts>
   <objects name="objects">
     <objects name="main_chars">
-      <object>objects\obj_mage</object>
-      <object>objects\obj_swordsman</object>
       <object>objects\obj_main</object>
       <object>objects\obj_charsprfollower</object>
     </objects>

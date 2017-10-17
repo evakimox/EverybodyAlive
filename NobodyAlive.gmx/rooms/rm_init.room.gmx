@@ -10,12 +10,17 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>//read save files
+  <code>random_set_seed(current_time);
+global.main_index = floor(random(43));
+
+//read save files
+
+
 
 // if no previous files then it is initial condition
 global.num_hun = 0;
 
-//swordsman 
+//Actually all character share these value field
 global.sword_atk=15;
 global.sword_crit=5;
 global.sword_hp=100;
@@ -23,13 +28,7 @@ global.sword_regen=100;
 global.sword_armor=5;
 global.sword_speed=5;
 
-//mage
-global.mage_atk=15;
-global.mage_crit=5;
-global.mage_hp=100;
-global.mage_regen=100;
-global.mage_armor=5;
-global.mage_speed=5;
+
 
 room_goto_next();</code>
   <enableViews>0</enableViews>
