@@ -25,8 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///setup values for enemy
+            <string>///statemachine, and init values
+enum enemy_state{
+    normal,
+    attacked
+}
+state = char_state.normal;
 
+///setup values for enemy
 spr_enemyType = spr_slime;
 image_speed = 0.1;
 

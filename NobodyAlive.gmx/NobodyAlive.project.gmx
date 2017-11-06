@@ -56,25 +56,40 @@
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_slime</sprite>
+      <sprite>sprites\spr_slimeAttacked</sprite>
     </sprites>
     <sprites name="drop_item">
       <sprite>sprites\spr_hun</sprite>
+      <sprite>sprites\spr_itemSword</sprite>
+      <sprite>sprites\spr_itemBow</sprite>
+      <sprite>sprites\spr_itemWand</sprite>
+      <sprite>sprites\spr_itemGun</sprite>
+      <sprite>sprites\spr_itemSpear</sprite>
     </sprites>
     <sprite>sprites\spr_dedtell</sprite>
     <sprite>sprites\spr_chestpurplr</sprite>
     <sprite>sprites\spr_door</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_stage1</background>
-    <background>background\bg_coverback</background>
-    <background>background\bg_cover</background>
-    <background>background\bg_maindial</background>
-    <background>background\bg_iteminfo</background>
-    <background>background\bg_save</background>
-    <background>background\bg_charinfo</background>
-    <background>background\bg_skilltree</background>
-    <background>background\bg_stage_forest</background>
-    <background>background\bg_setting</background>
+    <backgrounds name="bg_util">
+      <background>background\bg_setting</background>
+      <background>background\bg_maindial</background>
+      <background>background\bg_iteminfo</background>
+      <background>background\bg_save</background>
+      <background>background\bg_cover</background>
+      <background>background\bg_charinfo</background>
+      <background>background\bg_skilltree</background>
+      <background>background\bg_coverback</background>
+    </backgrounds>
+    <backgrounds name="forest">
+      <background>background\bg_stage1</background>
+      <background>background\bg_stage_forest</background>
+    </backgrounds>
+    <backgrounds name="castle">
+      <background>background\bg_castle1</background>
+      <background>background\bg_castle2</background>
+      <background>background\bg_castle3</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
