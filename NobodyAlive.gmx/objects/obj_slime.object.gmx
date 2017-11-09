@@ -30,21 +30,24 @@ enum enemy_state{
     normal,
     attacked
 }
-state = char_state.normal;
+state = enemy_state.normal;
 
 ///setup values for enemy
 spr_enemyType = spr_slime;
 image_speed = 0.1;
 
 //random movement
-spd = 0.5;
+spd = 0.2;
+hsp = spd;
 movingDir = -1;
 image_xscale = abs(image_yscale)*movingDir/2;
 
 //hp and armor and atk
-hp = 80;
+hp = 800;
 atk = 5;
 
+//check where attack come from
+AttackSource = 0;
 
 </string>
           </argument>
@@ -160,6 +163,44 @@ image_xscale = abs(image_yscale)*movingDir/2;
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///state machine implementation
+if(state==enemy_state.normal){
+    sprite_index = spr_slime;
+    hsp = spd*movingDir;
+    if(place_meeting(x,y,obj_meleehitbox)){
+        AttackSource = sign(instance_nearest(x,y,obj_meleehitbox).x - x);
+        state = enemy_state.attacked;
+    }
+}
+
+if(state == enemy_state.attacked){   
+    hsp = spd*6*AttackSource*(-1);
+    sprite_index = spr_slimeAttacked;
+    MaxImages = sprite_get_number(spr_slimeAttacked);
+    if(image_index &gt;= MaxImages-1){
+        state=enemy_state.normal;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///check if hp&lt;=0
 
 if(hp&lt;=0){
@@ -218,6 +259,28 @@ if(alarm[1]==-1){
     alarm[1]=15;   
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//assign speed
+hspeed = hsp;
 </string>
           </argument>
         </arguments>
