@@ -33,7 +33,8 @@ enum enemy_state{
 state = enemy_state.normal;
 
 ///setup values for enemy
-spr_enemyType = spr_slime;
+spr_normal = spr_slime;
+spr_attacked = spr_slimeAttacked;
 image_speed = 0.1;
 
 //random movement
@@ -43,7 +44,7 @@ movingDir = -1;
 image_xscale = abs(image_yscale)*movingDir/2;
 
 //hp and armor and atk
-hp = 800;
+hp = 80;
 atk = 5;
 
 //check where attack come from
@@ -165,7 +166,7 @@ image_xscale = abs(image_yscale)*movingDir/2;
             <kind>1</kind>
             <string>///state machine implementation
 if(state==enemy_state.normal){
-    sprite_index = spr_slime;
+    sprite_index = spr_normal;
     hsp = spd*movingDir;
     if(place_meeting(x,y,obj_meleehitbox)){
         AttackSource = sign(instance_nearest(x,y,obj_meleehitbox).x - x);
@@ -175,7 +176,7 @@ if(state==enemy_state.normal){
 
 if(state == enemy_state.attacked){   
     hsp = spd*6*AttackSource*(-1);
-    sprite_index = spr_slimeAttacked;
+    sprite_index = spr_attacked;
     MaxImages = sprite_get_number(spr_slimeAttacked);
     if(image_index &gt;= MaxImages-1){
         state=enemy_state.normal;

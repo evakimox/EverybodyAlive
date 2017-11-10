@@ -26,6 +26,9 @@
     <sprites name="MapStone">
       <sprite>sprites\spr_floor</sprite>
       <sprite>sprites\spr_stoneseg</sprite>
+      <sprite>sprites\spr_skeleton</sprite>
+      <sprite>sprites\spr_boxEject</sprite>
+      <sprite>sprites\spr_barrel</sprite>
     </sprites>
     <sprites name="skill">
       <sprite>sprites\spr_atk</sprite>
@@ -57,6 +60,9 @@
     <sprites name="enemy">
       <sprite>sprites\spr_slime</sprite>
       <sprite>sprites\spr_slimeAttacked</sprite>
+      <sprite>sprites\spr_kmd</sprite>
+      <sprite>sprites\spr_slimedragon</sprite>
+      <sprite>sprites\spr_spiky</sprite>
     </sprites>
     <sprites name="drop_item">
       <sprite>sprites\spr_hun</sprite>
