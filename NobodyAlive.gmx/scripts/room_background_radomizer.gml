@@ -1,3 +1,4 @@
+
 random_set_seed(current_time);
 bg_chooser = floor(random(43));
 if(bg_chooser>=21){

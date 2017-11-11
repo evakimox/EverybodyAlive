@@ -10,7 +10,14 @@
   <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
-  <code>room_background_radomizer();</code>
+  <code>random_set_seed(current_time);
+bg_chooser = floor(random(43));
+if(bg_chooser&gt;=21){
+    background_index = bg_stage_forest;
+}
+else{
+    background_index = bg_stage1;
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,7 +59,7 @@
   </views>
   <instances>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_setting;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleStage1;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="864" y="256" name="inst_4EE7E659" locked="0" code="" scaleX="2.61666655540466" scaleY="3.25833344459534" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="1120" y="160" name="inst_AD4B2151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

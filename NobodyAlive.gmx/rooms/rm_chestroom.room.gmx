@@ -10,7 +10,14 @@
   <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
-  <code>room_background_radomizer();</code>
+  <code>random_set_seed(current_time);
+bg_chooser = floor(random(43));
+if(bg_chooser&gt;=21){
+    background_index = bg_stage_forest;
+}
+else{
+    background_index = bg_stage1;
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
