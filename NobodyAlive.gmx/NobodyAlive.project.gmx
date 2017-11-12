@@ -164,17 +164,20 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_castleStage1</room>
     <room>rooms\rm_intro</room>
     <rooms name="stages">
       <rooms name="forest">
+        <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage2</room>
         <room>rooms\rm_chestroom</room>
         <room>rooms\rm_bossStage</room>
-        <room>rooms\rm_stage1</room>
       </rooms>
       <rooms name="castle">
         <room>rooms\rm_castleChest</room>
+        <room>rooms\rm_castleStage1</room>
+        <room>rooms\rm_castleStage2</room>
+        <room>rooms\rm_castleStage3</room>
+        <room>rooms\rm_castleBoosSage</room>
       </rooms>
     </rooms>
     <rooms name="utility">

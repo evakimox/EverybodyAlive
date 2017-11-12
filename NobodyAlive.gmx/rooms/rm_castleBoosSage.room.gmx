@@ -12,12 +12,15 @@
   <showcolour>-1</showcolour>
   <code>///room bg rangomizer
 random_set_seed(current_time);
-bg_chooser = floor(random(43));
-if(bg_chooser&gt;=21){
-    background_index = bg_stage_forest;
+bg_chooser = floor(random(61));
+if(bg_chooser&lt;=20){
+    background_index = bg_castle1;
+}
+else if(bg_chooser&gt;20&amp;&amp;bg_chooser&lt;=40){
+    background_index = bg_castle2;
 }
 else{
-    background_index = bg_stage1;
+    background_index = bg_castle3;
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
@@ -39,7 +42,7 @@ else{
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_stage1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_castle1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -59,12 +62,11 @@ else{
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_slime" x="1184" y="256" name="inst_640C49F7" locked="0" code="" scaleX="0.533333361148834" scaleY="0.727272748947144" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="224" y="416" name="inst_A4ADFC66" locked="0" code="" scaleX="0.649999976158142" scaleY="0.858333349227905" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest" x="1280" y="96" name="inst_A800C8E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination  = rm_stage2;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_main" x="64" y="288" name="inst_C4534D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stageDoor" x="1568" y="320" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleChest;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="832" y="320" name="inst_8BEECC7E" locked="0" code="" scaleX="1.20000004768372" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="1073" y="352" name="inst_35BDE465" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chest" x="1408" y="160" name="inst_C6D4F347" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
