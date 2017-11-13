@@ -45,7 +45,7 @@ movingDir = -1;
 image_xscale = abs(image_yscale)*movingDir/2;
 
 //hp and armor and atk
-hp = 80;
+hp = 800;
 atk = 5;
 
 //check where attack come from
@@ -130,19 +130,21 @@ with(instance_place(x,y,obj_main)){
           <argument>
             <kind>1</kind>
             <string>///change image direction of random moving
-LastDir = -1;
-if(movingDir ==0){
-    movingDir = -1*LastDir;
-}
-else if(movingDir == -1){
+if(RedirectTrigger){
     LastDir = -1;
-    movingDir = -1*LastDir;
+    if(movingDir ==0){
+        movingDir = -1*LastDir;
+    }
+    else if(movingDir == -1){
+        LastDir = -1;
+        movingDir = -1*LastDir;
+    }
+    else if(movingDir ==1){
+        LastDir = 1;
+        movingDir = -1*LastDir;
+    }
+    image_xscale = abs(image_yscale)*movingDir/2;
 }
-else if(movingDir ==1){
-    LastDir = 1;
-    movingDir = -1*LastDir;
-}
-image_xscale = abs(image_yscale)*movingDir/2;
 </string>
           </argument>
         </arguments>
@@ -169,14 +171,10 @@ image_xscale = abs(image_yscale)*movingDir/2;
 if(state==enemy_state.normal){
     sprite_index = spr_normal;
     hsp = spd*movingDir;
-    if(place_meeting(x,y,obj_meleehitbox)){
-        AttackSource = sign(instance_nearest(x,y,obj_meleehitbox).x - x);
-        state = enemy_state.attacked;
-    }
+        hspeed = hsp;
 }
 
 if(state == enemy_state.attacked){   
-    hsp = spd*6*AttackSource*(-1);
     sprite_index = spr_attacked;
     MaxImages = sprite_get_number(spr_slimeAttacked);
     if(image_index &gt;= MaxImages-1){
@@ -232,9 +230,16 @@ if(hp&lt;=0){
             <string>///slime move turn clock
 x = movingDir*spd+x;
 
-if (alarm[0]==-1){
-    alarm[0] = 300;
-}
+
+    if (alarm[0]==-1){
+        alarm[0] = 300;
+        if(state == enemy_state.normal){
+            RedirectTrigger = true;
+        }
+        else{
+            RedirectTrigger = false;
+        }
+    }
 </string>
           </argument>
         </arguments>
@@ -261,28 +266,6 @@ if(alarm[1]==-1){
     alarm[1]=15;   
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//assign speed
-hspeed = hsp;
 </string>
           </argument>
         </arguments>
