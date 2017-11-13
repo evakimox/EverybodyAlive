@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_maincharacter</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>-999</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -44,8 +44,7 @@ if(global.main_index&gt;=21) {
     mage_create();
 }
 else{
-mage_create();
-    //swordman_create();
+    swordman_create();
 }
 
 
@@ -98,7 +97,6 @@ if(state == char_state.attack){
     MaxImages = sprite_get_number(attacking_spr);
     if(follower.image_index &gt;= MaxImages-1){    
         myHitBox = instance_create(x,y,obj_meleehitbox);
-        myHitBox.sprite_index = bullet_spr;
         myHitBox.image_xscale = follower.image_xscale;
         state = char_state.normal;
     }

@@ -20,8 +20,6 @@
         <sprite>sprites\spr_mage_walk</sprite>
         <sprite>sprites\spr_mage_stand</sprite>
         <sprite>sprites\spr_mage_attack</sprite>
-        <sprite>sprites\spr_mageBullet</sprite>
-        <sprite>sprites\spr_mageBulletq</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
