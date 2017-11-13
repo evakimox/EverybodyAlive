@@ -12,14 +12,16 @@
       <sprites name="swordman">
         <sprite>sprites\spr_sword_walk</sprite>
         <sprite>sprites\spr_sword_stand</sprite>
-        <sprite>sprites\spr_sword_hitbox</sprite>
         <sprite>sprites\spr_sword_attack</sprite>
+        <sprite>sprites\spr_sword_hitbox2</sprite>
+        <sprite>sprites\spr_sword_hitbox</sprite>
         <sprite>sprites\spr_swordman_noarm</sprite>
       </sprites>
       <sprites name="mage">
         <sprite>sprites\spr_mage_walk</sprite>
         <sprite>sprites\spr_mage_stand</sprite>
         <sprite>sprites\spr_mage_attack</sprite>
+        <sprite>sprites\spr_mage_hitbox</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_temp</sprite>

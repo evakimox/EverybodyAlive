@@ -45,7 +45,7 @@ movingDir = -1;
 image_xscale = abs(image_yscale)*movingDir/2;
 
 //hp and armor and atk
-hp = 800;
+hp = 80;
 atk = 5;
 
 //check where attack come from
