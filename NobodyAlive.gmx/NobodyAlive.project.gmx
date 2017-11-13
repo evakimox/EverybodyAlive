@@ -4,7 +4,9 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_forestBgm</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="chars_animation">
       <sprite>sprites\spr_die</sprite>
@@ -31,6 +33,7 @@
       <sprite>sprites\spr_skeleton</sprite>
       <sprite>sprites\spr_boxEject</sprite>
       <sprite>sprites\spr_barrel</sprite>
+      <sprite>sprites\spr_brownStone</sprite>
     </sprites>
     <sprites name="skill">
       <sprite>sprites\spr_atk</sprite>
@@ -118,6 +121,7 @@
     </objects>
     <objects name="stage_barriers">
       <object>objects\obj_stonestage1</object>
+      <object>objects\obj_brownStone</object>
     </objects>
     <objects name="buttons">
       <object>objects\obj_buttonStartGame</object>
@@ -139,6 +143,7 @@
       <object>objects\obj_hunPrinter</object>
       <object>objects\obj_createHPbar</object>
       <object>objects\obj_stageDoor</object>
+      <object>objects\obj_musicPlayer</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>

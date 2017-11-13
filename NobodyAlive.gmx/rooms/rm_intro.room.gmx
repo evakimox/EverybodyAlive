@@ -54,6 +54,7 @@
     <instance objName="obj_buttonStartGame" x="475" y="330" name="inst_1271F074" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ExitGame" x="490" y="466" name="inst_46C15676" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ReadSaveMain" x="463" y="394" name="inst_A132C2C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_musicPlayer" x="64" y="64" name="inst_3F47A78B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

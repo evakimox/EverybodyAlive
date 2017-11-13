@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1620</width>
   <height>540</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -62,6 +62,7 @@ else{
     <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleStage1;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="864" y="256" name="inst_4EE7E659" locked="0" code="" scaleX="2.61666655540466" scaleY="3.25833344459534" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="1120" y="160" name="inst_AD4B2151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="671" y="118" name="inst_C983961F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
