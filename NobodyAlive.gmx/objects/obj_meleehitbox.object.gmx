@@ -29,16 +29,6 @@
 
 with (instance_place(x,y,obj_slime)){
     hp -= global.sword_atk;
-    AttackSource = sign(instance_nearest(x,y,obj_meleehitbox).x - x);
-    if(AttackSource == movingDir){
-        hspeed = spd*15*AttackSource*(-1);
-        friction=0.15;
-    }
-    else{
-        hspeed = spd*10*AttackSource*(-1);
-        friction =0.1;
-    }
-    state = enemy_state.attacked;
 }
 instance_destroy();
 </string>

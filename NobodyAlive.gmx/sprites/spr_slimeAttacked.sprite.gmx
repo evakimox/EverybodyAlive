@@ -7,7 +7,7 @@
   <coltolerance>0</coltolerance>
   <sepmasks>-1</sepmasks>
   <bboxmode>0</bboxmode>
-  <bbox_left>1</bbox_left>
+  <bbox_left>0</bbox_left>
   <bbox_right>77</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>63</bbox_bottom>
@@ -23,6 +23,5 @@
     <frame index="0">images\spr_slimeAttacked_0.png</frame>
     <frame index="1">images\spr_slimeAttacked_1.png</frame>
     <frame index="2">images\spr_slimeAttacked_2.png</frame>
-    <frame index="3">images\spr_slimeAttacked_3.png</frame>
   </frames>
 </sprite>
