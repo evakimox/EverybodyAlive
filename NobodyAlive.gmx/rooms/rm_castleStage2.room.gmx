@@ -7,7 +7,7 @@
   <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
   <code>///room bg rangomizer

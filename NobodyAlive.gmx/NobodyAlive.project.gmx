@@ -177,8 +177,8 @@
       <rooms name="forest">
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage2</room>
-        <room>rooms\rm_chestroom</room>
         <room>rooms\rm_bossStage</room>
+        <room>rooms\rm_chestroom</room>
       </rooms>
       <rooms name="castle">
         <room>rooms\rm_castleChest</room>
