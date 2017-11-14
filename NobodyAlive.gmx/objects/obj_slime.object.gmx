@@ -42,7 +42,7 @@ spd = 0.2;
 hsp = spd;
 movingDir = -1;
 
-image_xscale = abs(image_yscale)*movingDir/2;
+image_xscale = abs(image_yscale)*movingDir;
 
 //hp and armor and atk
 hp = 80;
@@ -143,7 +143,7 @@ if(RedirectTrigger){
         LastDir = 1;
         movingDir = -1*LastDir;
     }
-    image_xscale = abs(image_yscale)*movingDir/2;
+    image_xscale = abs(image_yscale)*movingDir;
 }
 </string>
           </argument>

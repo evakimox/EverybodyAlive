@@ -56,8 +56,22 @@ bool_up = place_meeting(x,y+5,obj_main);
 bool_down = place_meeting(x,y-5,obj_main);
 
 if(bool_left or bool_right or bool_up or bool_down){
-    if(keyboard_check_released(vk_space)){
+    if(keyboard_check_released(vk_space)&amp;&amp;image_index!=1){
         image_index = 1;
+        /// create random amount of items dropped
+        left_right = random(1)-1;
+        up_down = random(1)-1;
+        randNum = random(20);
+        if(randNum&lt;10){
+            chest_object = obj_wand;
+        }
+        else if(randNum&gt;=10&amp;&amp;randNum&lt;20){
+            chest_object = obj_armsword;
+        }
+        else{
+            chest_object = obj_potion;
+        }
+        instance_create(x+(random(50)+150)*left_right,y+(random(25)-150)*up_down,chest_object);
     }
 }
 </string>

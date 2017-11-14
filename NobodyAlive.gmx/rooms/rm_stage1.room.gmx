@@ -59,14 +59,14 @@ else{
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_slime" x="1184" y="256" name="inst_640C49F7" locked="0" code="" scaleX="0.533333361148834" scaleY="0.727272748947144" colour="4294967295" rotation="0"/>
+    <instance objName="obj_main" x="76" y="280" name="inst_C4534D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="1192" y="324" name="inst_640C49F7" locked="0" code="spr_normal = spr_spiky;&#xA;spr_attacked = spr_spiky;&#xA;" scaleX="0.533333361148834" scaleY="0.727272748947144" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="224" y="416" name="inst_A4ADFC66" locked="0" code="" scaleX="0.649999976158142" scaleY="0.858333349227905" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="1280" y="96" name="inst_A800C8E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination  = rm_stage2;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_main" x="64" y="288" name="inst_C4534D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="119" y="148" name="inst_ABA03342" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stonestage1" x="1079" y="149" name="inst_150680D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="1078" y="148" name="inst_150680D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="575" y="252" name="inst_9FD4435F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

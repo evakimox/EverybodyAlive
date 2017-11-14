@@ -19,6 +19,9 @@ global.main_index = floor(random(43));
 
 // if no previous files then it is initial condition
 global.num_hun = 0;
+global.num_potion = 1;
+global.have_sword = false;
+global.have_wand = false;
 
 //Actually all character share these value field
 global.sword_atk=15;

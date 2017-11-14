@@ -25,6 +25,7 @@
         <sprite>sprites\spr_mage_attack</sprite>
         <sprite>sprites\spr_mage_hitbox</sprite>
       </sprites>
+      <sprite>sprites\spr_trader</sprite>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
@@ -57,10 +58,12 @@
       <sprite>sprites\spr_readAfterDeath</sprite>
     </sprites>
     <sprites name="utility">
+      <sprite>sprites\spr_mage_onstone</sprite>
       <sprite>sprites\spr_sword_onstone</sprite>
       <sprite>sprites\spr_hpBar</sprite>
       <sprite>sprites\spr_swordProfile</sprite>
       <sprite>sprites\spr_hpFilling</sprite>
+      <sprite>sprites\spr_mageProfile</sprite>
     </sprites>
     <sprites name="enemy">
       <sprite>sprites\spr_slime</sprite>
@@ -68,6 +71,7 @@
       <sprite>sprites\spr_kmd</sprite>
       <sprite>sprites\spr_slimedragon</sprite>
       <sprite>sprites\spr_spiky</sprite>
+      <sprite>sprites\spr_rockdude</sprite>
     </sprites>
     <sprites name="drop_item">
       <sprite>sprites\spr_hun</sprite>
@@ -76,6 +80,7 @@
       <sprite>sprites\spr_itemWand</sprite>
       <sprite>sprites\spr_itemGun</sprite>
       <sprite>sprites\spr_itemSpear</sprite>
+      <sprite>sprites\spr_potion</sprite>
     </sprites>
     <sprite>sprites\spr_dedtell</sprite>
     <sprite>sprites\spr_chestpurplr</sprite>
@@ -125,6 +130,7 @@
     <objects name="main_chars">
       <object>objects\obj_main</object>
       <object>objects\obj_charsprfollower</object>
+      <object>objects\obj_trader</object>
     </objects>
     <objects name="stage_barriers">
       <object>objects\obj_stonestage1</object>
@@ -148,10 +154,12 @@
       <object>objects\obj_ButtonsHolder</object>
       <object>objects\obj_swordsman_printer</object>
       <object>objects\obj_hunPrinter</object>
+      <object>objects\obj_potionPrinter</object>
       <object>objects\obj_createHPbar</object>
       <object>objects\obj_stageDoor</object>
       <object>objects\obj_musicPlayer</object>
       <object>objects\obj_returnPrevRoom</object>
+      <object>objects\obj_itemList</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>
@@ -167,6 +175,9 @@
     </objects>
     <objects name="drop_item">
       <object>objects\obj_hun</object>
+      <object>objects\obj_potion</object>
+      <object>objects\obj_wand</object>
+      <object>objects\obj_armsword</object>
     </objects>
     <objects name="bullets">
       <object>objects\obj_meleehitbox</object>
@@ -188,11 +199,11 @@
         <room>rooms\rm_chestroom</room>
       </rooms>
       <rooms name="castle">
-        <room>rooms\rm_castleChest</room>
         <room>rooms\rm_castleStage1</room>
         <room>rooms\rm_castleStage2</room>
-        <room>rooms\rm_castleStage3</room>
         <room>rooms\rm_castleBoosSage</room>
+        <room>rooms\rm_castleChest</room>
+        <room>rooms\rm_castleStage3</room>
       </rooms>
       <rooms name="dark">
         <room>rooms\rm_darkStage1</room>
