@@ -6,6 +6,10 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\snd_forestBgm</sound>
+    <sound>sound\snd_walkingGrass</sound>
+    <sound>sound\snd_walkingStone</sound>
+    <sound>sound\snd_swdatk</sound>
+    <sound>sound\snd_mageatk</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="chars_animation">
@@ -85,6 +89,10 @@
     <sprite>sprites\spr_dedtell</sprite>
     <sprite>sprites\spr_chestpurplr</sprite>
     <sprite>sprites\spr_door</sprite>
+    <sprites name="loading">
+      <sprite>sprites\spr_stageIcons1</sprite>
+      <sprite>sprites\spr_stageIcons2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="bg_util">
@@ -112,6 +120,10 @@
       <background>background\bg_darkStageChest</background>
       <background>background\bg_darkStage3</background>
       <background>background\bg_darkBoss</background>
+    </backgrounds>
+    <backgrounds name="loading">
+      <background>background\bg_load1</background>
+      <background>background\bg_load2</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -160,6 +172,9 @@
       <object>objects\obj_musicPlayer</object>
       <object>objects\obj_returnPrevRoom</object>
       <object>objects\obj_itemList</object>
+      <object>objects\obj_GrassSound</object>
+      <object>objects\obj_stoneSound</object>
+      <object>objects\obj_stopWalkSound</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>
@@ -187,15 +202,20 @@
       <object>objects\obj_hpfilling</object>
     </objects>
     <object>objects\obj_chest</object>
+    <objects name="loading">
+      <object>objects\obj_stageIcon1</object>
+      <object>objects\obj_stageIcon2</object>
+      <object>objects\obj_walkingMan</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
     <room>rooms\rm_intro</room>
     <rooms name="stages">
       <rooms name="forest">
+        <room>rooms\rm_bossStage</room>
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage2</room>
-        <room>rooms\rm_bossStage</room>
         <room>rooms\rm_chestroom</room>
       </rooms>
       <rooms name="castle">
@@ -221,6 +241,8 @@
       <room>rooms\rm_help</room>
     </rooms>
     <room>rooms\rm_skills</room>
+    <room>rooms\rm_load1</room>
+    <room>rooms\rm_load2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

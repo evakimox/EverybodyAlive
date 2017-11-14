@@ -44,11 +44,13 @@ if(global.main_index&gt;=21) {
     global.MainType = "mage";
     mage_create();
     hitbox_sprite = spr_mage_hitbox;
+    atkSound=snd_mageatk;
 }
 else{
     global.MainType = "sword";
     swordman_create();
     hitbox_sprite = spr_sword_hitbox;
+    atkSound=snd_swdatk;
 }
 
 
@@ -101,6 +103,7 @@ if(state == char_state.attack){
     follower.image_speed = 0.2;    
     if(AttackFirstEntry){
         AttackFirstEntry = false;
+        audio_play_sound(atkSound,12,false);
         myHitBox = instance_create(x,y,obj_meleehitbox);
         myHitBox.sprite_index = hitbox_sprite;
         myHitBox.image_speed = 0.2;

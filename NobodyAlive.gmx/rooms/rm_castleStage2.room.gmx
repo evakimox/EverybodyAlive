@@ -73,6 +73,7 @@ else{
     <instance objName="obj_slime" x="1280" y="320" name="inst_35BDE465" locked="0" code="spr_normal = spr_slimedragon;&#xA;spr_attacked = spr_slimedragon;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="128" y="320" name="inst_C6D4F347" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brownStone" x="963" y="95" name="inst_E08B2F63" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stoneSound" x="129" y="174" name="inst_6327F8C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
