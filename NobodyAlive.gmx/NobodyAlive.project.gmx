@@ -144,6 +144,7 @@
       <object>objects\obj_createHPbar</object>
       <object>objects\obj_stageDoor</object>
       <object>objects\obj_musicPlayer</object>
+      <object>objects\obj_returnPrevRoom</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>

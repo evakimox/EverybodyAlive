@@ -54,6 +54,7 @@
     <instance objName="obj_ButtonsHolder" x="0" y="0" name="inst_E0E951E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_swordsman_printer" x="320" y="256" name="inst_F12A8B88" locked="0" code="" scaleX="1.72033894062042" scaleY="1.72033894062042" colour="4294967295" rotation="0"/>
     <instance objName="obj_toSkills" x="32" y="32" name="inst_56D4B5DE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_returnPrevRoom" x="32" y="160" name="inst_31250955" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
