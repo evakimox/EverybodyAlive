@@ -63,7 +63,6 @@ else{
     <instance objName="obj_slime" x="864" y="256" name="inst_4EE7E659" locked="0" code="" scaleX="2.61666655540466" scaleY="3.25833344459534" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="1120" y="160" name="inst_AD4B2151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="671" y="118" name="inst_C983961F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_main" x="1117" y="395" name="inst_CECD26E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
