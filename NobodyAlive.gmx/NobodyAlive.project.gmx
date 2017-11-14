@@ -101,6 +101,13 @@
       <background>background\bg_castle2</background>
       <background>background\bg_castle3</background>
     </backgrounds>
+    <backgrounds name="dark">
+      <background>background\bg_darkStage1</background>
+      <background>background\bg_darkStage2</background>
+      <background>background\bg_darkStageChest</background>
+      <background>background\bg_darkStage3</background>
+      <background>background\bg_darkBoss</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -186,6 +193,13 @@
         <room>rooms\rm_castleStage2</room>
         <room>rooms\rm_castleStage3</room>
         <room>rooms\rm_castleBoosSage</room>
+      </rooms>
+      <rooms name="dark">
+        <room>rooms\rm_darkStage1</room>
+        <room>rooms\rm_darkStage2</room>
+        <room>rooms\rm_darkStage3</room>
+        <room>rooms\rm_darkChest</room>
+        <room>rooms\rm_darkBoss</room>
       </rooms>
     </rooms>
     <rooms name="utility">
