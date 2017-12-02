@@ -147,6 +147,9 @@
     <objects name="stage_barriers">
       <object>objects\obj_stonestage1</object>
       <object>objects\obj_brownStone</object>
+      <object>objects\obj_barrel</object>
+      <object>objects\obj_skeleton</object>
+      <object>objects\obj_ejectBox</object>
     </objects>
     <objects name="buttons">
       <object>objects\obj_buttonStartGame</object>
@@ -187,6 +190,9 @@
     <object>objects\obj_toSkills</object>
     <objects name="enemy">
       <object>objects\obj_slime</object>
+      <object>objects\obj_kmd</object>
+      <object>objects\obj_spiky</object>
+      <object>objects\obj_rockdude</object>
     </objects>
     <objects name="drop_item">
       <object>objects\obj_hun</object>
