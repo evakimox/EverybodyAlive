@@ -28,7 +28,7 @@
             <string>image_alpha = 0.001;
 solid_flag = 0;
 wait_count = 300;
-
+instance_create(x,y,obj_stopWalkSound);
 </string>
           </argument>
         </arguments>
