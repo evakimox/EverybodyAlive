@@ -22,14 +22,17 @@
         <sprite>sprites\spr_sword_hitbox2</sprite>
         <sprite>sprites\spr_sword_hitbox</sprite>
         <sprite>sprites\spr_swordman_noarm</sprite>
+        <sprite>sprites\spr_sword_skill</sprite>
       </sprites>
       <sprites name="mage">
         <sprite>sprites\spr_mage_walk</sprite>
         <sprite>sprites\spr_mage_stand</sprite>
         <sprite>sprites\spr_mage_attack</sprite>
         <sprite>sprites\spr_mage_hitbox</sprite>
+        <sprite>sprites\spr_mage_skill</sprite>
       </sprites>
       <sprite>sprites\spr_trader</sprite>
+      <sprite>sprites\spr_mainAttacked</sprite>
     </sprites>
     <sprite>sprites\spr_temp</sprite>
     <sprites name="MapStone">
@@ -76,6 +79,8 @@
       <sprite>sprites\spr_slimedragon</sprite>
       <sprite>sprites\spr_spiky</sprite>
       <sprite>sprites\spr_rockdude</sprite>
+      <sprite>sprites\spr_EnemyHpBarBase</sprite>
+      <sprite>sprites\spr_EnemyHpBar</sprite>
     </sprites>
     <sprites name="drop_item">
       <sprite>sprites\spr_hun</sprite>
@@ -134,11 +139,19 @@
     <script>scripts\check_barrier_collision.gml</script>
     <script>scripts\swordman_create.gml</script>
     <script>scripts\mage_create.gml</script>
+    <script>scripts\blink_once_from_solid.gml</script>
+    <script>scripts\follow_main_character.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
   </fonts>
   <objects name="objects">
+    <objects name="enemy">
+      <object>objects\obj_slime</object>
+      <object>objects\obj_kmd</object>
+      <object>objects\obj_spiky</object>
+      <object>objects\obj_rockdude</object>
+    </objects>
     <objects name="main_chars">
       <object>objects\obj_main</object>
       <object>objects\obj_charsprfollower</object>
@@ -169,15 +182,23 @@
       <object>objects\obj_ButtonsHolder</object>
       <object>objects\obj_swordsman_printer</object>
       <object>objects\obj_hunPrinter</object>
-      <object>objects\obj_potionPrinter</object>
-      <object>objects\obj_createHPbar</object>
-      <object>objects\obj_stageDoor</object>
-      <object>objects\obj_musicPlayer</object>
       <object>objects\obj_returnPrevRoom</object>
       <object>objects\obj_itemList</object>
-      <object>objects\obj_GrassSound</object>
-      <object>objects\obj_stoneSound</object>
-      <object>objects\obj_stopWalkSound</object>
+      <objects name="sound">
+        <object>objects\obj_stopWalkSound</object>
+        <object>objects\obj_stageSoundController</object>
+        <object>objects\obj_stoneSound</object>
+        <object>objects\obj_GrassSound</object>
+        <object>objects\obj_musicPlayer</object>
+      </objects>
+      <objects name="stage">
+        <object>objects\obj_stageDoor</object>
+        <object>objects\obj_enemyHpBar</object>
+        <object>objects\obj_enemyHP</object>
+        <object>objects\obj_createHPbar</object>
+        <object>objects\obj_mainAttackedCtrl</object>
+        <object>objects\obj_potionPrinter</object>
+      </objects>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>
@@ -188,12 +209,6 @@
       <object>objects\obj_speed</object>
     </objects>
     <object>objects\obj_toSkills</object>
-    <objects name="enemy">
-      <object>objects\obj_slime</object>
-      <object>objects\obj_kmd</object>
-      <object>objects\obj_spiky</object>
-      <object>objects\obj_rockdude</object>
-    </objects>
     <objects name="drop_item">
       <object>objects\obj_hun</object>
       <object>objects\obj_potion</object>
@@ -202,6 +217,7 @@
     </objects>
     <objects name="bullets">
       <object>objects\obj_meleehitbox</object>
+      <object>objects\obj_mageSkill</object>
     </objects>
     <object>objects\obj_dedTell</object>
     <objects name="Displaything">
@@ -219,10 +235,10 @@
     <room>rooms\rm_intro</room>
     <rooms name="stages">
       <rooms name="forest">
-        <room>rooms\rm_bossStage</room>
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage2</room>
         <room>rooms\rm_chestroom</room>
+        <room>rooms\rm_bossStage</room>
       </rooms>
       <rooms name="castle">
         <room>rooms\rm_castleStage1</room>

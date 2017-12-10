@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>enum char_state{
     normal,
-    attack
+    attack,
+    skill
 }
 state = char_state.normal;
 
@@ -47,10 +48,14 @@ if(global.main_index&gt;=21) {
     atkSound=snd_mageatk;
 }
 else{
-    global.MainType = "sword";
-    swordman_create();
-    hitbox_sprite = spr_sword_hitbox;
-    atkSound=snd_swdatk;
+    global.MainType = "mage";
+    mage_create();
+    hitbox_sprite = spr_mage_hitbox;
+    atkSound=snd_mageatk;
+    //global.MainType = "sword";
+    //swordman_create();
+    //hitbox_sprite = spr_sword_hitbox;
+    //atkSound=snd_swdatk;
 }
 
 
@@ -97,6 +102,10 @@ if(state == char_state.normal){
         AttackFirstEntry = true;
         state = char_state.attack;       
     }
+    if keyboard_check(ord('L')){
+        AttackFirstEntry = true;
+        state = char_state.skill; 
+    }
 }
 if(state == char_state.attack){
     follower.sprite_index = attacking_spr;
@@ -106,6 +115,22 @@ if(state == char_state.attack){
         audio_play_sound(atkSound,12,false);
         myHitBox = instance_create(x,y,obj_meleehitbox);
         myHitBox.sprite_index = hitbox_sprite;
+        myHitBox.image_speed = 0.2;
+        myHitBox.image_xscale = follower.image_xscale;
+    }
+    MaxImages = sprite_get_number(attacking_spr);
+    if(follower.image_index &gt;= MaxImages-1){    
+        state = char_state.normal;
+    }
+}
+
+if(state == char_state.skill){
+    follower.sprite_index = walking_spr;
+    follower.image_speed = 0.2;    
+    if(AttackFirstEntry){
+        AttackFirstEntry = false;
+        audio_play_sound(atkSound,12,false);
+        myHitBox = instance_create(x,y,obj_mageSkill);
         myHitBox.image_speed = 0.2;
         myHitBox.image_xscale = follower.image_xscale;
     }
@@ -165,8 +190,11 @@ if(hp&lt;=0){
     follower.image_speed = 50;
     follower.image_alpha -=0.02;
     follower.y-=2;
-
+    with(obj_stageSoundController){
+        instance_destroy();
+    }
     if(follower.image_alpha&lt;=0.05){
+        
         instance_create(view_xview[0],view_yview[0],obj_dedTell);
         instance_destroy();
     }
@@ -213,11 +241,13 @@ if(hp&lt;=0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(instance_exists(obj_slime)){
+            <string>/*
+if(instance_exists(obj_slime)){
     with(obj_slime){
         instance_destroy();
     }
 }
+*/
 </string>
           </argument>
         </arguments>

@@ -45,11 +45,23 @@ movingDir = -1;
 image_xscale = abs(image_yscale)*movingDir;
 
 //hp and armor and atk
-hp = 80;
+Maxhp=80;
+hp = Maxhp;
 atk = 5;
 
 //check where attack come from
 AttackSource = 0;
+
+//hpbar thing
+wide=bbox_right-bbox_left;
+HPbar = instance_create(bbox_left,bbox_top-14,obj_enemyHpBar);
+HPbar.image_xscale=(wide/78);
+HPbar.x=bbox_left;
+HPbar.visible=false;
+showHPbar = false;
+HPbarRemainingTime = 0;
+
+
 
 </string>
           </argument>
@@ -73,7 +85,7 @@ AttackSource = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// create random amount of items dropped
+            <string>///item drop 
 amt = random(5)+2;
 for(i=0;i&lt;amt;i++){
     left_right = random(1)-1;
@@ -81,6 +93,30 @@ for(i=0;i&lt;amt;i++){
     instance_create(x+(random(50)+30)*left_right,y+(random(25)+15)*up_down,obj_hun);
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///delete hp bar
+with(HPbar){
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>
@@ -105,7 +141,8 @@ for(i=0;i&lt;amt;i++){
             <kind>1</kind>
             <string>///attack character
 with(instance_place(x,y,obj_main)){
-        hp-=5;
+    hp-=5;
+    instance_create(view_xview[0],view_yview[0],obj_mainAttackedCtrl);
 }
 </string>
           </argument>
@@ -176,11 +213,36 @@ if(state==enemy_state.normal){
 
 if(state == enemy_state.attacked){   
     sprite_index = spr_attacked;
+    mask_index = spr_normal;
     MaxImages = sprite_get_number(spr_slimeAttacked);
     if(image_index &gt;= MaxImages-1){
         state=enemy_state.normal;
     }
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///hp bar value &amp; follow
+HPbar.HPpercent = hp/Maxhp*100;
+HPbar.x=bbox_left;
+HPbar.y=bbox_top-14;
 </string>
           </argument>
         </arguments>
@@ -230,7 +292,6 @@ if(hp&lt;=0){
             <string>///slime move turn clock
 x = movingDir*spd+x;
 
-
     if (alarm[0]==-1){
         alarm[0] = 300;
         if(state == enemy_state.normal){
@@ -260,12 +321,49 @@ x = movingDir*spd+x;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///attack clock #1
+            <string>///attack clock ctrl #1
 
 if(alarm[1]==-1){
-    alarm[1]=15;   
+    alarm[1]=60;   
 }
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///toggle HP bar visibility
+if(showHPbar){
+    HPbarRemainingTime = 100;
+    showHPbar=false;
+}
+
+if(HPbarRemainingTime&gt;0){
+    if(instance_exists(HPbar)){
+        HPbarRemainingTime-=1;
+        HPbar.visible = true;
+    }
+}
+else{
+    if(instance_exists(HPbar)){
+        HPbar.visible = false;
+    }
+}
 </string>
           </argument>
         </arguments>

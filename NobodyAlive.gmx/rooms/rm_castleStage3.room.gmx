@@ -64,15 +64,7 @@ else{
   <instances>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stageDoor" x="1568" y="320" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleBoosSage;&#xA;DestRoomx=32;&#xA;DestRoomy=288;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="256" y="320" name="inst_D9DCFF40" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;movingDir = 1;&#xA;image_xscale = abs(image_yscale)*movingDir/2;" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="416" y="448" name="inst_1C1D9A74" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;movingDir = 1;&#xA;image_xscale = abs(image_yscale)*movingDir/2;&#xA;" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="480" y="224" name="inst_48F46F30" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;movingDir = 1;&#xA;image_xscale = abs(image_yscale)*movingDir/2;" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="1312" y="416" name="inst_5EB77139" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="1056" y="448" name="inst_27D42348" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;movingDir = -1;&#xA;image_xscale = abs(image_yscale)*movingDir/2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="1248" y="512" name="inst_EB1F9A63" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;movingDir = -1;&#xA;image_xscale = abs(image_yscale)*movingDir/2;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="1152" y="288" name="inst_35BDE465" locked="0" code="spr_normal = spr_kmd;&#xA;spr_attacked = spr_kmd;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest" x="1408" y="160" name="inst_C6D4F347" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_brownStone" x="704" y="288" name="inst_6C7038FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_chest" x="1184" y="224" name="inst_C6D4F347" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneSound" x="96" y="256" name="inst_A492C635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>

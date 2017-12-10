@@ -63,7 +63,6 @@ else{
   </views>
   <instances>
     <instance objName="obj_stageDoor" x="1568" y="320" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_load2;&#xA;DestRoomx=-32;&#xA;DestRoomy=-280;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="1041" y="352" name="inst_35BDE465" locked="0" code="spr_normal = spr_rockdude;&#xA;spr_attacked = spr_rockdude;&#xA;" scaleX="2.5" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="1408" y="160" name="inst_C6D4F347" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneSound" x="160" y="256" name="inst_FC015CB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
