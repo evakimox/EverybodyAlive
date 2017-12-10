@@ -42,6 +42,14 @@
       <sprite>sprites\spr_boxEject</sprite>
       <sprite>sprites\spr_barrel</sprite>
       <sprite>sprites\spr_brownStone</sprite>
+      <sprite>sprites\spr_thron</sprite>
+      <sprite>sprites\spr_smallMountain</sprite>
+      <sprite>sprites\spr_bigStone</sprite>
+      <sprite>sprites\spr_bigGrass1</sprite>
+      <sprite>sprites\spr_bigGrass2</sprite>
+      <sprite>sprites\spr_smolGrass</sprite>
+      <sprite>sprites\spr_miniSkeleton</sprite>
+      <sprite>sprites\spr_bottles</sprite>
     </sprites>
     <sprites name="skill">
       <sprite>sprites\spr_atk</sprite>
