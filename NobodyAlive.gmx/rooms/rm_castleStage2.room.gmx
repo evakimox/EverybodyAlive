@@ -10,18 +10,7 @@
   <persistent>-1</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
-  <code>///room bg rangomizer
-random_set_seed(current_time);
-bg_chooser = floor(random(61));
-if(bg_chooser&lt;=20){
-    background_index = bg_castle1;
-}
-else if(bg_chooser&gt;20&amp;&amp;bg_chooser&lt;=40){
-    background_index = bg_castle2;
-}
-else{
-    background_index = bg_castle3;
-}</code>
+  <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -66,6 +55,13 @@ else{
     <instance objName="obj_stageDoor" x="288" y="576" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleStage3;&#xA;DestRoomx=256;&#xA;DestRoomy=50; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="204" y="349" name="inst_C6D4F347" locked="0" code="image_xscale = -1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneSound" x="2" y="3" name="inst_6327F8C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="100" y="351" name="inst_626ED0CD" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="-3"/>
+    <instance objName="obj_border" x="451" y="161" name="inst_0E26C6A6" locked="0" code="" scaleX="40" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1400" y="158" name="inst_BBAC466B" locked="0" code="" scaleX="30" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="962" y="317" name="inst_F623C9A5" locked="0" code="" scaleX="14.0500001907349" scaleY="0.789473712444305" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1102" y="237" name="inst_40EA370F" locked="0" code="" scaleX="0.899999976158142" scaleY="8.78999996185303" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="835" y="240" name="inst_43B52E4C" locked="0" code="" scaleX="-1.75" scaleY="8.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bornPosition" x="1569" y="385" name="inst_367CCEF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

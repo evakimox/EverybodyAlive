@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//enemy child class setup values
 spr_normal = spr_kmd;
-spr_attacked = spr_kmd;
+spr_attacked = spr_kmdAttacked;
 image_speed = 0.1;
 state = enemy_state.normal;
 

@@ -42,7 +42,7 @@ y_offset = -1;
 hpAmt = instance_create(x+x_offset,y+y_offset,obj_hpfilling);
 hpAmt.depth = depth -1;
 
-potionPrinter = instance_create(x+500,y+500,obj_potionPrinter);
+potionPrinter = instance_create(x+500,y,obj_potionPrinter);
 potionPrinter.image_xscale = 0.3;
 potionPrinter.image_yscale = 0.3;
 </string>

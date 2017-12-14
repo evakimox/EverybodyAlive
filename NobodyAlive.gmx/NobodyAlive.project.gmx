@@ -50,6 +50,7 @@
       <sprite>sprites\spr_smolGrass</sprite>
       <sprite>sprites\spr_miniSkeleton</sprite>
       <sprite>sprites\spr_bottles</sprite>
+      <sprite>sprites\spr_border</sprite>
     </sprites>
     <sprites name="skill">
       <sprite>sprites\spr_atk</sprite>
@@ -81,14 +82,28 @@
       <sprite>sprites\spr_mageProfile</sprite>
     </sprites>
     <sprites name="enemy">
-      <sprite>sprites\spr_slime</sprite>
-      <sprite>sprites\spr_slimeAttacked</sprite>
-      <sprite>sprites\spr_kmd</sprite>
       <sprite>sprites\spr_slimedragon</sprite>
       <sprite>sprites\spr_spiky</sprite>
       <sprite>sprites\spr_rockdude</sprite>
       <sprite>sprites\spr_EnemyHpBarBase</sprite>
       <sprite>sprites\spr_EnemyHpBar</sprite>
+      <sprites name="stg1">
+        <sprite>sprites\spr_slimeAttacked</sprite>
+        <sprite>sprites\spr_slime</sprite>
+        <sprite>sprites\spr_kmd</sprite>
+        <sprite>sprites\spr_kmdAttacked</sprite>
+        <sprite>sprites\spr_spiderbrown</sprite>
+        <sprite>sprites\spr_spidergreen</sprite>
+        <sprite>sprites\spr_spiderbutt</sprite>
+        <sprite>sprites\spr_labahua</sprite>
+        <sprite>sprites\spr_labahuaAttacked</sprite>
+        <sprite>sprites\spr_spidersilver</sprite>
+        <sprite>sprites\spr_shujing</sprite>
+        <sprite>sprites\spr_shujingAttacked</sprite>
+        <sprite>sprites\spr_yezhu</sprite>
+        <sprite>sprites\spr_yezhuAttacked</sprite>
+        <sprite>sprites\spr_slimekingAttacked</sprite>
+      </sprites>
     </sprites>
     <sprites name="drop_item">
       <sprite>sprites\spr_hun</sprite>
@@ -154,9 +169,32 @@
     <font>fonts\ComicSansMS</font>
   </fonts>
   <objects name="objects">
+    <objects name="stage_barriers">
+      <object>objects\obj_border</object>
+      <object>objects\obj_stonestage1</object>
+      <object>objects\obj_skeleton</object>
+      <object>objects\obj_ejectBox</object>
+      <object>objects\obj_barrel</object>
+      <object>objects\obj_brownStone</object>
+      <object>objects\obj_thron</object>
+      <object>objects\obj_mountain</object>
+      <object>objects\obj_bigStone</object>
+      <object>objects\obj_babySkeleton</object>
+      <object>objects\obj_bottles</object>
+      <object>objects\obj_bigGrass1</object>
+      <object>objects\obj_bigGrass2</object>
+      <object>objects\obj_smolGrass</object>
+    </objects>
     <objects name="enemy">
       <object>objects\obj_slime</object>
       <object>objects\obj_kmd</object>
+      <object>objects\obj_labahua</object>
+      <object>objects\obj_spiderbrown</object>
+      <object>objects\obj_spidersilver</object>
+      <object>objects\obj_spidergreen</object>
+      <object>objects\obj_spiderbutt</object>
+      <object>objects\obj_yezhu</object>
+      <object>objects\obj_shujing</object>
       <object>objects\obj_spiky</object>
       <object>objects\obj_rockdude</object>
     </objects>
@@ -164,13 +202,6 @@
       <object>objects\obj_main</object>
       <object>objects\obj_charsprfollower</object>
       <object>objects\obj_trader</object>
-    </objects>
-    <objects name="stage_barriers">
-      <object>objects\obj_stonestage1</object>
-      <object>objects\obj_brownStone</object>
-      <object>objects\obj_barrel</object>
-      <object>objects\obj_skeleton</object>
-      <object>objects\obj_ejectBox</object>
     </objects>
     <objects name="buttons">
       <object>objects\obj_buttonStartGame</object>
@@ -207,6 +238,7 @@
         <object>objects\obj_mainAttackedCtrl</object>
         <object>objects\obj_potionPrinter</object>
       </objects>
+      <object>objects\obj_bornPosition</object>
     </objects>
     <objects name="skill">
       <object>objects\obj_atk</object>
@@ -226,6 +258,7 @@
     <objects name="bullets">
       <object>objects\obj_meleehitbox</object>
       <object>objects\obj_mageSkill</object>
+      <object>objects\obj_swordSkill</object>
     </objects>
     <object>objects\obj_dedTell</object>
     <objects name="Displaything">
@@ -246,6 +279,7 @@
         <room>rooms\rm_stage1</room>
         <room>rooms\rm_stage2</room>
         <room>rooms\rm_chestroom</room>
+        <room>rooms\rm_stage4</room>
         <room>rooms\rm_bossStage</room>
       </rooms>
       <rooms name="castle">

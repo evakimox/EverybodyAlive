@@ -61,13 +61,21 @@ else{
   <instances>
     <instance objName="obj_main" x="76" y="280" name="inst_C4534D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_chest" x="1280" y="96" name="inst_A800C8E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination  = rm_stage2;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GrassSound" x="102" y="66" name="inst_9A51CAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_kmd" x="402" y="204" name="inst_05343A23" locked="0" code="" scaleX="0.535000026226044" scaleY="0.540000021457672" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rockdude" x="318" y="369" name="inst_B7DEDA59" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="634" y="350" name="inst_EA2D6EE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spiky" x="774" y="193" name="inst_042F3307" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="858" y="104" name="inst_A7CAD99D" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="159" y="165" name="inst_70B84699" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="513" y="253" name="inst_6EDF7BA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_thron" x="0" y="540" name="inst_A756B384" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_thron" x="757" y="540" name="inst_8CBF0CA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="1059" y="162" name="inst_5C5F9849" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bigStone" x="800" y="128" name="inst_F1BB01E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kmd" x="559" y="128" name="inst_73544ED9" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="388" y="201" name="inst_FE8A0E2A" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="482" y="247" name="inst_1B9BA5C6" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="375" y="385" name="inst_2312CCD6" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="1020" y="180" name="inst_A411B15E" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slime" x="1382" y="247" name="inst_6CB4EBDB" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

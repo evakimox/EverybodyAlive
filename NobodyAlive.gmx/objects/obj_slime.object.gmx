@@ -207,6 +207,7 @@ if(RedirectTrigger){
             <string>///state machine implementation
 if(state==enemy_state.normal){
     sprite_index = spr_normal;
+    friction =0;
     hsp = spd*movingDir;
         hspeed = hsp;
 }

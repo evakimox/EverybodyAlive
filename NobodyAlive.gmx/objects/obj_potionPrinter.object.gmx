@@ -50,7 +50,8 @@ shake = 2;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>following_the_character_view(700,120);
+            <string>///following view
+following_the_character_view(700,110);
 </string>
           </argument>
         </arguments>
@@ -134,12 +135,14 @@ if(text_color ==c_red){
 //draw text shadow
 draw_set_color(c_black);
 //draw_set_font(ComicSansMS);
-draw_text(x+37,y-28,string(global.num_potion));
+//draw_text(x+37,y-28,string(global.num_potion));
+draw_text_transformed(x+28, y-18, string(global.num_potion), 0.6, 0.6, 0);
 
 //draw text
 draw_set_color(text_color);
 //draw_set_font(ComicSansMS);
-draw_text(x+35,y-30,string(global.num_potion));
+//draw_text(x+35,y-30,string(global.num_potion));
+draw_text_transformed(x+26, y-20, string(global.num_potion), 0.6, 0.6, 0);
 </string>
           </argument>
         </arguments>

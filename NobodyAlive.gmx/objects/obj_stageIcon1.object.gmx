@@ -52,7 +52,7 @@ instance_create(x,y,obj_stopWalkSound);
             <kind>1</kind>
             <string>if(place_meeting(x,y,obj_walkingMan)){
     main = instance_nearest(x,y,obj_main);
-    main.x=32;
+    main.x=100;
     main.y=280; 
     room_goto(rm_castleStage1);
 }
