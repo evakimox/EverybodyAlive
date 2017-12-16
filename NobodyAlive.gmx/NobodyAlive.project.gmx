@@ -164,6 +164,8 @@
     <script>scripts\mage_create.gml</script>
     <script>scripts\blink_once_from_solid.gml</script>
     <script>scripts\follow_main_character.gml</script>
+    <script>scripts\bouncing_back.gml</script>
+    <script>scripts\bouncing_back_wall.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
