@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_maincharacter</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>-999</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>

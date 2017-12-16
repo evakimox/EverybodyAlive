@@ -65,7 +65,7 @@ else{
     <instance objName="obj_GrassSound" x="102" y="66" name="inst_9A51CAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="858" y="104" name="inst_A7CAD99D" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="159" y="165" name="inst_70B84699" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stonestage1" x="513" y="253" name="inst_6EDF7BA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stonestage1" x="503" y="226" name="inst_6EDF7BA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_thron" x="0" y="540" name="inst_A756B384" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_thron" x="757" y="540" name="inst_8CBF0CA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="1059" y="162" name="inst_5C5F9849" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -76,7 +76,9 @@ else{
     <instance objName="obj_slime" x="375" y="385" name="inst_2312CCD6" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="1020" y="180" name="inst_A411B15E" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
     <instance objName="obj_slime" x="1382" y="247" name="inst_6CB4EBDB" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
-    <instance objName="obj_border" x="408" y="286" name="inst_D5AD0F45" locked="0" code="" scaleX="10" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_border" x="0" y="306" name="inst_D5AD0F45" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_border" x="1623" y="304" name="inst_E594CD0C" locked="0" code="" scaleX="25" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="obj_border" x="827" y="525" name="inst_D946D3DD" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

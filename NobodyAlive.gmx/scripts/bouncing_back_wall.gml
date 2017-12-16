@@ -12,11 +12,11 @@ hit = collision_line(x1,y1,x2,y2,obj_border,true,true);
 while(hit!=noone){
     x1 = main.x;
     y1 = main.y;
-   if(x2 != main.x){
+   //if(x2 != main.x){
         main.x += dirx;
-    }
-    if(y2 != main.y){
+    //}
+    //if(y2 != main.y){
         main.y += diry;
-    }
+    //}
     hit = collision_line(x1,y1,x2,y2,obj_border,true,true);
 }
