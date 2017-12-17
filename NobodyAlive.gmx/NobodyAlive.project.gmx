@@ -82,9 +82,6 @@
       <sprite>sprites\spr_mageProfile</sprite>
     </sprites>
     <sprites name="enemy">
-      <sprite>sprites\spr_slimedragon</sprite>
-      <sprite>sprites\spr_spiky</sprite>
-      <sprite>sprites\spr_rockdude</sprite>
       <sprite>sprites\spr_EnemyHpBarBase</sprite>
       <sprite>sprites\spr_EnemyHpBar</sprite>
       <sprites name="stg1">
@@ -103,6 +100,21 @@
         <sprite>sprites\spr_yezhu</sprite>
         <sprite>sprites\spr_yezhuAttacked</sprite>
         <sprite>sprites\spr_slimekingAttacked</sprite>
+      </sprites>
+      <sprites name="stg2">
+        <sprite>sprites\spr_baseballAttacked</sprite>
+        <sprite>sprites\spr_baseball</sprite>
+        <sprite>sprites\spr_hairstyleAttacked</sprite>
+        <sprite>sprites\spr_hairstyle</sprite>
+        <sprite>sprites\spr_stoneboiAttacked</sprite>
+        <sprite>sprites\spr_stoneboi</sprite>
+        <sprite>sprites\spr_vestboiAttacked</sprite>
+        <sprite>sprites\spr_vestboi</sprite>
+        <sprite>sprites\spr_spikyAttacked</sprite>
+        <sprite>sprites\spr_spiky</sprite>
+        <sprite>sprites\spr_slimedragon</sprite>
+        <sprite>sprites\spr_rockdudeAttacked</sprite>
+        <sprite>sprites\spr_rockdude</sprite>
       </sprites>
     </sprites>
     <sprites name="drop_item">
@@ -188,17 +200,26 @@
       <object>objects\obj_smolGrass</object>
     </objects>
     <objects name="enemy">
-      <object>objects\obj_slime</object>
-      <object>objects\obj_kmd</object>
-      <object>objects\obj_labahua</object>
-      <object>objects\obj_spiderbrown</object>
-      <object>objects\obj_spidersilver</object>
-      <object>objects\obj_spidergreen</object>
-      <object>objects\obj_spiderbutt</object>
-      <object>objects\obj_yezhu</object>
-      <object>objects\obj_shujing</object>
-      <object>objects\obj_spiky</object>
-      <object>objects\obj_rockdude</object>
+      <objects name="forest">
+        <object>objects\obj_spidersilver</object>
+        <object>objects\obj_slime</object>
+        <object>objects\obj_spiderbutt</object>
+        <object>objects\obj_spiderbrown</object>
+        <object>objects\obj_shujing</object>
+        <object>objects\obj_yezhu</object>
+        <object>objects\obj_spidergreen</object>
+        <object>objects\obj_labahua</object>
+        <object>objects\obj_kmd</object>
+      </objects>
+      <objects name="castle">
+        <object>objects\obj_baseball</object>
+        <object>objects\obj_hairstyle</object>
+        <object>objects\obj_stoneboi</object>
+        <object>objects\obj_vestboi</object>
+        <object>objects\obj_spiky</object>
+        <object>objects\obj_slimedragon</object>
+        <object>objects\obj_rockdude</object>
+      </objects>
     </objects>
     <objects name="main_chars">
       <object>objects\obj_main</object>
@@ -287,9 +308,9 @@
       <rooms name="castle">
         <room>rooms\rm_castleStage1</room>
         <room>rooms\rm_castleStage2</room>
-        <room>rooms\rm_castleBoosSage</room>
-        <room>rooms\rm_castleChest</room>
         <room>rooms\rm_castleStage3</room>
+        <room>rooms\rm_castleChest</room>
+        <room>rooms\rm_castleBoosSage</room>
       </rooms>
       <rooms name="dark">
         <room>rooms\rm_darkStage1</room>

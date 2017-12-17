@@ -78,6 +78,8 @@ else{
     <instance objName="obj_yezhu" x="1183" y="412" name="inst_554D5371" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shujing" x="993" y="301" name="inst_DE177581" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_shujing" x="1343" y="160" name="inst_230FD63D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="6" y="293" name="inst_7CCE9AA4" locked="0" code="" scaleX="1" scaleY="30" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1620" y="278" name="inst_12588D18" locked="0" code="" scaleX="1" scaleY="30" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

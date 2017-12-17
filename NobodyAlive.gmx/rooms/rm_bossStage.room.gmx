@@ -62,6 +62,10 @@ else{
     <instance objName="obj_chest" x="1120" y="160" name="inst_AD4B2151" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GrassSound" x="115" y="161" name="inst_889B4DAB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="929" y="106" name="inst_9C1E2AB5" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="852" y="539" name="inst_25B82DE3" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1626" y="341" name="inst_8A424FAE" locked="0" code="" scaleX="1" scaleY="30" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="0" y="321" name="inst_B6AC4574" locked="0" code="" scaleX="1" scaleY="30" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

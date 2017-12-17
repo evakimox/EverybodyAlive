@@ -42,14 +42,14 @@ spd = global.sword_speed * 0.5;
 
 //create main character sprite
 if(global.main_index&gt;=21) {
-    //global.MainType = "mage";
-    //mage_create();
-   // hitbox_sprite = spr_mage_hitbox;
-    //atkSound=snd_mageatk;
-    global.MainType = "sword";
-    swordman_create();
-    hitbox_sprite = spr_sword_hitbox;
-    atkSound=snd_swdatk;
+    global.MainType = "mage";
+    mage_create();
+    hitbox_sprite = spr_mage_hitbox;
+    atkSound=snd_mageatk;
+    //global.MainType = "sword";
+    //swordman_create();
+    //hitbox_sprite = spr_sword_hitbox;
+    //atkSound=snd_swdatk;
 }
 else{
     //global.MainType = "mage";

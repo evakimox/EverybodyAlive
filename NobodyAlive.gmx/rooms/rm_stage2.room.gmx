@@ -62,7 +62,7 @@ else{
     <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_chestroom;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GrassSound" x="138" y="182" name="inst_9F699455" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="712" y="105" name="inst_232C86A1" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_border" x="770" y="535" name="inst_67F12D61" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="748" y="537" name="inst_67F12D61" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bigGrass1" x="756" y="565" name="inst_641DE665" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bigGrass2" x="-1" y="567" name="inst_CAAE5ACE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiderbutt" x="1056" y="385" name="inst_3CEDDD91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -74,6 +74,8 @@ else{
     <instance objName="obj_spiderbrown" x="366" y="180" name="inst_DF325BE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spidergreen" x="562" y="189" name="inst_99021474" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spidersilver" x="473" y="192" name="inst_65FB41A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="7" y="324" name="inst_CE6B1921" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1618" y="321" name="inst_96B78D0D" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
