@@ -179,6 +179,7 @@
     <script>scripts\bouncing_back.gml</script>
     <script>scripts\bouncing_back_wall.gml</script>
     <script>scripts\reaching_main_char.gml</script>
+    <script>scripts\redirect_if_triggered.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>

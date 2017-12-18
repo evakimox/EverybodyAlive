@@ -29,7 +29,8 @@
 enum enemy_state{
     normal,
     attacked,
-    noticed
+    noticed,
+    hitWall
 }
 state = enemy_state.normal;
 
@@ -170,6 +171,7 @@ with(instance_place(x,y,obj_main)){
             <string>///change image direction of random moving
 /*
 if(RedirectTrigger){
+
     LastDir = -1;
     if(movingDir ==0){
         movingDir = -1*LastDir;
@@ -212,7 +214,7 @@ if(state==enemy_state.normal){
     sprite_index = spr_normal;
     friction =0;
     hsp = spd*movingDir;
-        hspeed = hsp;
+    hspeed = hsp;
 }
 
 if(state == enemy_state.attacked){   
@@ -222,6 +224,15 @@ if(state == enemy_state.attacked){
     if(image_index &gt;= MaxImages-1){
         state=enemy_state.normal;
     }
+}
+
+if(state == enemy_state.hitWall){
+    RedirectTrigger = true;
+    state = enemy_state.normal;
+}
+
+if(place_meeting(x+hsp,y,obj_stonestage1)){
+    state = enemy_state.hitWall;
 }
 </string>
           </argument>
@@ -273,38 +284,6 @@ if(hp&lt;=0){
     instance_destroy();
     }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///slime move turn clock
-x = movingDir*spd+x;
-
-    if (alarm[0]==-1){
-        alarm[0] = 300;
-        if(state == enemy_state.normal){
-            RedirectTrigger = true;
-        }
-        else{
-            RedirectTrigger = false;
-        }
-    }
 </string>
           </argument>
         </arguments>
@@ -388,9 +367,41 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///自动寻敌
+            <string>///slime move turn clock
+    if (alarm[0]==-1){
+        alarm[0] = 300;
+        if(state == enemy_state.normal){
+            RedirectTrigger = true;
+        }
+        else{
+            RedirectTrigger = false;
+        }
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///自动寻敌/左右移动
 
-reaching_main_char();
+//reaching_main_char();
+
+//redirect_if_triggered();
 </string>
           </argument>
         </arguments>
