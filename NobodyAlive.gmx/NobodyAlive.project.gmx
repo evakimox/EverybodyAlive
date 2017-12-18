@@ -178,6 +178,7 @@
     <script>scripts\follow_main_character.gml</script>
     <script>scripts\bouncing_back.gml</script>
     <script>scripts\bouncing_back_wall.gml</script>
+    <script>scripts\reaching_main_char.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
@@ -296,6 +297,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
+    <room>rooms\rm_test</room>
     <room>rooms\rm_intro</room>
     <rooms name="stages">
       <rooms name="forest">
@@ -330,6 +332,7 @@
     <room>rooms\rm_skills</room>
     <room>rooms\rm_load1</room>
     <room>rooms\rm_load2</room>
+    <room>rooms\room25</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
