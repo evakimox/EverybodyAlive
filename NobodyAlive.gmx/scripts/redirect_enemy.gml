@@ -1,5 +1,4 @@
 ///change image direction of random moving
-if(RedirectTrigger){
     RedirectTrigger = false;
     LastDir = -1;
     if(movingDir ==0){
@@ -14,4 +13,4 @@ if(RedirectTrigger){
         movingDir = -1*LastDir;
     }
     image_xscale = abs(image_yscale)*movingDir;
-}
+
