@@ -1,5 +1,4 @@
 ///change image direction of random moving
-    RedirectTrigger = false;
     LastDir = -1;
     if(movingDir ==0){
         movingDir = -1*LastDir;

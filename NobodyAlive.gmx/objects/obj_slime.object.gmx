@@ -170,26 +170,8 @@ with(instance_place(x,y,obj_main)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///change image direction of random moving
-/*
-if(RedirectTrigger){
-    RedirectTrigger=false;
-    LastDir = -1;
-    if(movingDir ==0){
-        movingDir = -1*LastDir;
-    }
-    else if(movingDir == -1){
-        LastDir = -1;
-        movingDir = -1*LastDir;
-    }
-    else if(movingDir ==1){
-        LastDir = 1;
-        movingDir = -1*LastDir;
-    }
-    image_xscale = abs(image_yscale)*movingDir;
-}
-*/
-
+            <string>///turn 
+state = enemy_state.turn;
 </string>
           </argument>
         </arguments>
@@ -217,25 +199,10 @@ if(state==enemy_state.normal){
     sprite_index = spr_normal;
     friction =0;
     hsp = spd*movingDir;
-    hspeed = hsp;
-    block = instance_place(x+hsp,y,obj_stonestage1);
-    if(block!=noone){
-        xDist = x - block.x;
-        nxDist= x+hsp - block.x;
-        yDist = y-block.y;
-        
-        curDist = xDist*xDist + yDist*yDist;
-        nextDist= nxDist*nxDist + yDist*yDist;
-        
-        if(nextDist&lt;curDist){
-            state = enemy_state.turn;
-        }
-    }
-    /*
-    if(place_meeting(x+hsp,y,obj_stonestage1)){
+    hspeed = hsp;      
+    if(collision_check_enemy()){
         state = enemy_state.turn;
     }
-    */
 }
 
 if(state == enemy_state.attacked){   
@@ -251,8 +218,6 @@ if(state == enemy_state.attacked){
 }
 
 if(state == enemy_state.turn){
-    //alarm[0]=-1;
-    //RedirectTrigger = true;
     redirect_enemy();
     state = enemy_state.normal;
 }
@@ -328,7 +293,10 @@ if(hp&lt;=0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///attack clock ctrl #1
+            <string>///clocks
+    if (alarm[0]==-1){
+        alarm[0] = 500;
+    }
 
 if(alarm[1]==-1){
     alarm[1]=60;   
@@ -371,36 +339,6 @@ else{
         HPbar.visible = false;
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///move turn clock
-    if (alarm[0]==-1){
-        alarm[0] = 500;
-        if(state == enemy_state.normal||state==enemy_state.turn){
-            RedirectTrigger = true;
-        }
-        else{
-            RedirectTrigger = false;
-        }
-    }
 </string>
           </argument>
         </arguments>

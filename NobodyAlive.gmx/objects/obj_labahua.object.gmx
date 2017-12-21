@@ -31,7 +31,7 @@ spr_attacked = spr_labahuaAttacked;
 image_speed = 0.1;
 state = enemy_state.normal;
 
-spd = 0.2;
+spd = 0;
 hsp = spd;
 movingDir = -1;
 

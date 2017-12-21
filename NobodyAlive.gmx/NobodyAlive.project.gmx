@@ -180,7 +180,7 @@
     <script>scripts\bouncing_back_wall.gml</script>
     <script>scripts\reaching_main_char.gml</script>
     <script>scripts\redirect_enemy.gml</script>
-    <script>scripts\redirect.gml</script>
+    <script>scripts\collision_check_enemy.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
@@ -299,8 +299,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_test</room>
     <room>rooms\rm_intro</room>
+    <room>rooms\rm_test</room>
     <rooms name="stages">
       <rooms name="forest">
         <room>rooms\rm_stage1</room>
