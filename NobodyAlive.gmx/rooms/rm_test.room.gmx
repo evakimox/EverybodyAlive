@@ -57,10 +57,8 @@
     <instance objName="obj_border" x="1826" y="359" name="inst_2DAEB877" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="2"/>
     <instance objName="obj_border" x="1001" y="155" name="inst_D3A1ADFB" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main" x="685" y="454" name="inst_A65772A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="248" y="290" name="inst_00D145C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="355" y="228" name="inst_D38282C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="400" y="457" name="inst_AAEBCCEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spiderbrown" x="734" y="260" name="inst_B3BDFDE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

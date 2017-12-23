@@ -117,9 +117,15 @@ for(i=0;i&lt;amt;i++){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///delete hp bar
+            <string>///delete hp bar, exclimation mark
 with(HPbar){
     instance_destroy();
+}
+
+if(instance_exists(exclimationMark)){
+    with(exclimationMark){
+        instance_destroy();
+    }
 }
 </string>
           </argument>
@@ -195,31 +201,47 @@ state = enemy_state.turn;
           <argument>
             <kind>1</kind>
             <string>///state machine implementation
+/*自由走动*/
 if(state==enemy_state.normal){
     sprite_index = spr_normal;
     friction =0;
     hsp = spd*movingDir;
-    hspeed = hsp;      
+    hspeed = hsp;    
+    vspeed = 0;  
     if(collision_check_enemy()){
         state = enemy_state.turn;
     }
+    enemy_in_radius_normal_move(200);
 }
 
+/*被攻击*/
 if(state == enemy_state.attacked){   
     sprite_index = spr_attacked;
     mask_index = spr_normal;
     MaxImages = sprite_get_number(spr_slimeAttacked);
+    /*被击动画播放完成*/
     if(image_index &gt;= MaxImages-1){
-        state=enemy_state.normal;
+        friction = 0;
+        after_attack_in_radius(200);
     }
     if(place_meeting(x+hsp,y,obj_stonestage1)){
         state = enemy_state.turn;
     }
 }
-
+/*主人公半径内状态*/
+if(state == enemy_state.noticed){
+    reaching_main_char();
+    /*叹号跟随怪物*/
+    if(instance_exists(exclimationMark)){
+        exclimationMark.x = (bbox_left+bbox_right)/2;
+        exclimationMark.y = bbox_top-14;
+        exclimationMark.depth = -100;
+    }
+}
+/*转向*/
 if(state == enemy_state.turn){
     redirect_enemy();
-    state = enemy_state.normal;
+    enemy_in_radius_normal_move(200);
 }
 
 
@@ -359,11 +381,8 @@ else{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///自动寻敌/左右移动
+            <string>///草稿区
 
-//reaching_main_char();
-
-//redirect_if_triggered();
 </string>
           </argument>
         </arguments>
