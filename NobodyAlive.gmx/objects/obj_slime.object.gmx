@@ -382,6 +382,13 @@ else{
           <argument>
             <kind>1</kind>
             <string>///草稿区
+xspd = hspeed;
+yspd = vspeed;
+
+check_barrier_collision();
+
+hspeed = xspd;
+vspeed = yspd;
 
 </string>
           </argument>
