@@ -99,7 +99,6 @@
         <sprite>sprites\spr_shujingAttacked</sprite>
         <sprite>sprites\spr_yezhu</sprite>
         <sprite>sprites\spr_yezhuAttacked</sprite>
-        <sprite>sprites\spr_slimekingAttacked</sprite>
       </sprites>
       <sprites name="stg2">
         <sprite>sprites\spr_baseballAttacked</sprite>
@@ -113,10 +112,27 @@
         <sprite>sprites\spr_spikyAttacked</sprite>
         <sprite>sprites\spr_spiky</sprite>
         <sprite>sprites\spr_slimedragon</sprite>
-        <sprite>sprites\spr_rockdudeAttacked</sprite>
-        <sprite>sprites\spr_rockdude</sprite>
       </sprites>
       <sprite>sprites\spr_exclimation</sprite>
+      <sprite>sprites\spr_labaBullet</sprite>
+      <sprites name="effect">
+        <sprite>sprites\spr_star</sprite>
+        <sprite>sprites\spr_blood</sprite>
+        <sprite>sprites\spr_sand</sprite>
+      </sprites>
+      <sprites name="boss">
+        <sprite>sprites\spr_slimeKing</sprite>
+        <sprite>sprites\spr_slimekingAttacked</sprite>
+        <sprite>sprites\spr_slimeKingBubble</sprite>
+        <sprite>sprites\spr_slimeKingJump</sprite>
+        <sprite>sprites\spr_bubble</sprite>
+        <sprite>sprites\spr_rockdudeHitground</sprite>
+        <sprite>sprites\spr_rockdudeAttacked</sprite>
+        <sprite>sprites\spr_rockdude</sprite>
+        <sprite>sprites\spr_fallingStone</sprite>
+        <sprite>sprites\spr_devil</sprite>
+        <sprite>sprites\spr_devilAttacked</sprite>
+      </sprites>
     </sprites>
     <sprites name="drop_item">
       <sprite>sprites\spr_hun</sprite>
@@ -206,6 +222,7 @@
       <object>objects\obj_smolGrass</object>
     </objects>
     <objects name="enemy">
+      <object>objects\obj_enemy</object>
       <objects name="forest">
         <object>objects\obj_spidersilver</object>
         <object>objects\obj_slime</object>
@@ -226,9 +243,18 @@
         <object>objects\obj_slimedragon</object>
         <object>objects\obj_rockdude</object>
       </objects>
+      <objects name="dark">
+        <object>objects\obj_devil</object>
+        <object>objects\obj_devil2</object>
+      </objects>
       <object>objects\obj_enemyHpBar</object>
       <object>objects\obj_enemyHP</object>
       <object>objects\obj_exclimation</object>
+      <objects name="effect">
+        <object>objects\obj_sand</object>
+        <object>objects\obj_blood</object>
+        <object>objects\obj_star</object>
+      </objects>
     </objects>
     <objects name="main_chars">
       <object>objects\obj_main</object>
@@ -286,9 +312,12 @@
       <object>objects\obj_armsword</object>
     </objects>
     <objects name="bullets">
-      <object>objects\obj_meleehitbox</object>
-      <object>objects\obj_mageSkill</object>
-      <object>objects\obj_swordSkill</object>
+      <object>objects\obj_labaBullet</object>
+      <objects name="main">
+        <object>objects\obj_meleehitbox</object>
+        <object>objects\obj_mageSkill</object>
+        <object>objects\obj_swordSkill</object>
+      </objects>
     </objects>
     <object>objects\obj_dedTell</object>
     <objects name="Displaything">

@@ -63,16 +63,16 @@
     <instance objName="obj_bornPosition" x="1599" y="247" name="inst_367CCEF1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="1827" y="359" name="inst_C0DBED6C" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="2"/>
     <instance objName="obj_baseball" x="198" y="221" name="inst_5F2CA74D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_baseball" x="320" y="202" name="inst_89F817DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_baseball" x="353" y="224" name="inst_89F817DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baseball" x="267" y="282" name="inst_9E166B7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="725" y="256" name="inst_DF87D311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="618" y="309" name="inst_FA15DD27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="957" y="378" name="inst_F2A53B5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="1030" y="454" name="inst_5CE14551" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="851" y="484" name="inst_5B5ADC29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stoneboi" x="1263" y="210" name="inst_E620B495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stoneboi" x="1263" y="244" name="inst_E620B495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneboi" x="1171" y="309" name="inst_6B72388D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stoneboi" x="1328" y="286" name="inst_21508FF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stoneboi" x="1334" y="301" name="inst_21508FF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vestboi" x="1739" y="347" name="inst_69D82FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vestboi" x="1651" y="419" name="inst_93C94408" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_vestboi" x="1751" y="469" name="inst_5EF8FE06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

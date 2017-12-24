@@ -228,8 +228,14 @@ if(hp&lt;=0){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///empty
-
+            <string>///let enemy follow when very close
+enemy = collision_ellipse(x-200,y-200,x+200,y+200,obj_enemy,true,true);
+if(enemy!=noone &amp;&amp; enemy.state = enemy_state.normal){
+    with(enemy){
+        exclimationMark = instance_create((bbox_left+bbox_right)/2,bbox_top-14,obj_exclimation);
+        state = enemy_state.noticed;
+    }
+}
 </string>
           </argument>
         </arguments>

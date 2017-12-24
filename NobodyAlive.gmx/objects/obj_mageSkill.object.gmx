@@ -75,8 +75,9 @@ if(image_index &gt;= MaxImages-1){
           <argument>
             <kind>1</kind>
             <string>///attack if collide with enemy
-if(place_meeting(x,y,obj_slime)){
-    with (instance_place(x,y,obj_slime)){
+if(place_meeting(x,y,obj_enemy)){
+    with (instance_place(x,y,obj_enemy)){
+        instance_create(x,y,obj_blood);
         hp -= global.sword_atk/20;
         showHPbar = true;
         AttackSource = sign(instance_nearest(x,y,obj_mageSkill).x - x);

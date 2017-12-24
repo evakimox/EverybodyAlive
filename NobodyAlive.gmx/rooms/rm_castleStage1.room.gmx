@@ -53,10 +53,10 @@
   <instances>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneSound" x="160" y="256" name="inst_0B5498DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_border" x="100" y="360" name="inst_454103F1" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="-3"/>
-    <instance objName="obj_border" x="990" y="160" name="inst_9E9F5644" locked="0" code="" scaleX="90" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="100" y="360" name="inst_454103F1" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="-3"/>
+    <instance objName="obj_border" x="995" y="121" name="inst_9E9F5644" locked="0" code="" scaleX="90" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bornPosition" x="160" y="440" name="inst_58B6CEA8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_border" x="1821" y="353" name="inst_11D6652D" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="2"/>
+    <instance objName="obj_border" x="1821" y="353" name="inst_11D6652D" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="2"/>
     <instance objName="obj_brownStone" x="122" y="137" name="inst_7655B069" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brownStone" x="1016" y="116" name="inst_07CE60C1" locked="0" code="" scaleX="1.44000005722046" scaleY="1.34883725643158" colour="4294967295" rotation="0"/>
     <instance objName="obj_mountain" x="101" y="540" name="inst_532673C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

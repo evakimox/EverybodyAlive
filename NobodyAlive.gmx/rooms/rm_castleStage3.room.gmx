@@ -55,19 +55,19 @@
     <instance objName="obj_stageDoor" x="1644" y="568" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleChest;&#xA;DestRoomx=32;&#xA;DestRoomy=288;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneSound" x="96" y="256" name="inst_A492C635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bornPosition" x="655" y="245" name="inst_F9DCD809" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stoneboi" x="288" y="192" name="inst_FB40289B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stoneboi" x="292" y="241" name="inst_FB40289B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneboi" x="186" y="323" name="inst_60E445A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneboi" x="281" y="375" name="inst_52F73F04" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="97" y="353" name="inst_26B31D5F" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="-3"/>
     <instance objName="obj_border" x="1824" y="355" name="inst_B8ADABE1" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="2"/>
     <instance objName="obj_border" x="931" y="160" name="inst_7DECCF7D" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stoneboi" x="375" y="253" name="inst_CEC00FB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stoneboi" x="382" y="253" name="inst_CEC00FB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brownStone" x="119" y="153" name="inst_2BEBAD44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_brownStone" x="1072" y="120" name="inst_76BAA51B" locked="0" code="" scaleX="1.30303025245667" scaleY="1.44186043739319" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slimedragon" x="1087" y="272" name="inst_09FA64F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slimedragon" x="991" y="284" name="inst_09FA64F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_slimedragon" x="1236" y="348" name="inst_D5A595DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_mountain" x="90" y="540" name="inst_66551E43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_baseball" x="1590" y="201" name="inst_30BA5D47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_baseball" x="1624" y="243" name="inst_30BA5D47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baseball" x="1440" y="482" name="inst_1D59081D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
