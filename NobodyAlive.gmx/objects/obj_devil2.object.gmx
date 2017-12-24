@@ -207,7 +207,7 @@ if(state==enemy_state.normal){
 if(state == enemy_state.attacked){   
     sprite_index = spr_attacked;
     mask_index = spr_normal;
-    MaxImages = sprite_get_number(spr_slimeAttacked);
+    MaxImages = sprite_get_number(spr_attacked);
     /*被击动画播放完成*/
     if(image_index &gt;= MaxImages-1){
         friction = 0;
@@ -236,10 +236,32 @@ if(state == enemy_state.turn){
 /*技能1*/
 if(state == enemy_state.skill1){
     if(skill1Ready){
-        instance_create(x-300,y,obj_labahua);
+        sprite_index = spr_devilSkill1;
         skill1Ready = false;
     }
-    state = enemy_state.normal;
+    MaxImages = sprite_get_number(spr_devilSkill1);
+    /*技能1动画播放完成*/
+    if(image_index &gt;= image_number-1){
+        instance_create(x+sign(image_xscale)*200,y,obj_yellowWind);
+        instance_create(x+sign(image_xscale)*200+215,y,obj_yellowWind);
+        instance_create(x+sign(image_xscale)*200+215+215,y,obj_yellowWind);
+        state = enemy_state.normal;
+    }
+}
+
+/*技能2*/
+if(state == enemy_state.skill2){
+    if(skill2Ready){
+        sprite_index = spr_devilSkill1;
+        skill2Ready = false;
+    }
+    MaxImages = sprite_get_number(spr_devilSkill2);
+    /*技能1动画播放完成*/
+    if(image_index &gt;= image_number-1){
+        fork = instance_create(x,y,obj_fork);
+        fork.hspeed = 3*sign(image_xscale);
+        state = enemy_state.normal;
+    }
 }
 
 
@@ -295,6 +317,10 @@ if(hp&lt;=0){
 
 if(hp&lt;2*(Maxhp/3)&amp;&amp;skill1Ready){
     state = enemy_state.skill1;
+}
+
+if(hp&lt;(Maxhp/3)&amp;&amp;skill2Ready){
+    state = enemy_state.skill2;
 }
 </string>
           </argument>

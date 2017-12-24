@@ -132,6 +132,10 @@
         <sprite>sprites\spr_fallingStone</sprite>
         <sprite>sprites\spr_devil</sprite>
         <sprite>sprites\spr_devilAttacked</sprite>
+        <sprite>sprites\spr_devilSkill2</sprite>
+        <sprite>sprites\spr_fork</sprite>
+        <sprite>sprites\spr_devilSkill1</sprite>
+        <sprite>sprites\spr_yelllowWind</sprite>
       </sprites>
     </sprites>
     <sprites name="drop_item">
@@ -318,6 +322,8 @@
         <object>objects\obj_mageSkill</object>
         <object>objects\obj_swordSkill</object>
       </objects>
+      <object>objects\obj_yellowWind</object>
+      <object>objects\obj_fork</object>
     </objects>
     <object>objects\obj_dedTell</object>
     <objects name="Displaything">
