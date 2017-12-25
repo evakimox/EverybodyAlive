@@ -88,6 +88,7 @@
         <sprite>sprites\spr_slimeAttacked</sprite>
         <sprite>sprites\spr_slime</sprite>
         <sprite>sprites\spr_kmd</sprite>
+        <sprite>sprites\spr_kmdAttacking</sprite>
         <sprite>sprites\spr_kmdAttacked</sprite>
         <sprite>sprites\spr_spiderbrown</sprite>
         <sprite>sprites\spr_spidergreen</sprite>
@@ -239,6 +240,7 @@
         <object>objects\obj_labahua</object>
         <object>objects\obj_slimeKing</object>
         <object>objects\obj_kmd</object>
+        <object>objects\obj_slimeKing2</object>
       </objects>
       <objects name="castle">
         <object>objects\obj_baseball</object>
@@ -319,6 +321,7 @@
     </objects>
     <objects name="bullets">
       <object>objects\obj_labaBullet</object>
+      <object>objects\obj_bubble</object>
       <object>objects\obj_spikyBullet</object>
       <objects name="main">
         <object>objects\obj_meleehitbox</object>
