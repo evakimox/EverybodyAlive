@@ -61,7 +61,7 @@ else{
   <instances>
     <instance objName="obj_main" x="76" y="280" name="inst_C4534D50" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination  = rm_stage2;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stageDoor" x="1590" y="269" name="inst_7D0F1AF9" locked="0" code="DoorDestination  = rm_stage2;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1.49000000953674" scaleY="2.09045219421387" colour="4294967295" rotation="0"/>
     <instance objName="obj_GrassSound" x="102" y="66" name="inst_9A51CAA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="865" y="72" name="inst_A7CAD99D" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stonestage1" x="159" y="165" name="inst_70B84699" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
