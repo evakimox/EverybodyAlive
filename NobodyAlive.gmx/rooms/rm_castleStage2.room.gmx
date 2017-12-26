@@ -7,7 +7,7 @@
   <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stageDoor" x="243" y="580" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleStage3;&#xA;DestRoomx=256;&#xA;DestRoomy=50;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stageDoor" x="553" y="567" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleStage3;&#xA;DestRoomx=256;&#xA;DestRoomy=50;" scaleX="1" scaleY="5" colour="4294967295" rotation="90"/>
     <instance objName="obj_stoneSound" x="2" y="3" name="inst_6327F8C5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="100" y="351" name="inst_626ED0CD" locked="0" code="" scaleX="1" scaleY="20" colour="4294967295" rotation="-3"/>
     <instance objName="obj_border" x="451" y="161" name="inst_0E26C6A6" locked="0" code="" scaleX="40" scaleY="1" colour="4294967295" rotation="0"/>
@@ -68,14 +68,17 @@
     <instance objName="obj_spiky" x="725" y="256" name="inst_DF87D311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="618" y="309" name="inst_FA15DD27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiky" x="957" y="378" name="inst_F2A53B5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spiky" x="1030" y="454" name="inst_5CE14551" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_spiky" x="851" y="484" name="inst_5B5ADC29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spiky" x="1074" y="429" name="inst_5CE14551" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_spiky" x="817" y="458" name="inst_5B5ADC29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneboi" x="1263" y="244" name="inst_E620B495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneboi" x="1171" y="309" name="inst_6B72388D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneboi" x="1334" y="301" name="inst_21508FF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vestboi" x="1739" y="347" name="inst_69D82FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vestboi" x="1651" y="419" name="inst_93C94408" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_vestboi" x="1751" y="469" name="inst_5EF8FE06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vestboi" x="1747" y="284" name="inst_69D82FA3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vestboi" x="1600" y="374" name="inst_93C94408" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_vestboi" x="1757" y="404" name="inst_5EF8FE06" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mountain" x="1123" y="539" name="inst_83A87927" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_mountain" x="676" y="539" name="inst_37FA7081" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="387" y="548" name="inst_3001933A" locked="0" code="" scaleX="31" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

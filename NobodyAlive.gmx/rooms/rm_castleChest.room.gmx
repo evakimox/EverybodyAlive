@@ -7,7 +7,7 @@
   <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_stageDoor" x="160" y="448" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleBoosSage;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stageDoor" x="181" y="563" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleBoosSage;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="21" colour="4294967295" rotation="90"/>
     <instance objName="obj_trader" x="1600" y="192" name="inst_67C1EBB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_chest" x="704" y="416" name="inst_54197512" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -61,6 +61,7 @@
     <instance objName="obj_border" x="963" y="156" name="inst_9E21B501" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="98" y="351" name="inst_9F30F422" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="-3"/>
     <instance objName="obj_border" x="1825" y="339" name="inst_CB472F83" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="2"/>
+    <instance objName="obj_border" x="974" y="572" name="inst_8A2EE840" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

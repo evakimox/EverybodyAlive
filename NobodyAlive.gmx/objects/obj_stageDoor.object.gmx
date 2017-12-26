@@ -68,7 +68,9 @@ else{
 if(bool_DoorOpen){
     if(place_meeting(x,y,obj_main)){
         obj_main.x = DestRoomx;
-        obj_main.y = DestRoomy;        
+        obj_main.y = DestRoomy;    
+        audio_stop_sound(snd_walkingGrass);
+        audio_stop_sound(snd_walkingStone);    
         room_goto(DoorDestination);
     }
 }

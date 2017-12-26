@@ -7,7 +7,7 @@
   <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>-1</showcolour>
   <code></code>
@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stageDoor" x="1644" y="568" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleChest;&#xA;DestRoomx=32;&#xA;DestRoomy=288;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stageDoor" x="1616" y="562" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_castleChest;&#xA;DestRoomx=32;&#xA;DestRoomy=288;&#xA;" scaleX="1" scaleY="10" colour="4294967295" rotation="90"/>
     <instance objName="obj_stoneSound" x="96" y="256" name="inst_A492C635" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_bornPosition" x="655" y="245" name="inst_F9DCD809" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_stoneboi" x="292" y="241" name="inst_FB40289B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -69,6 +69,7 @@
     <instance objName="obj_mountain" x="90" y="540" name="inst_66551E43" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baseball" x="1624" y="243" name="inst_30BA5D47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_baseball" x="1440" y="482" name="inst_1D59081D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1312" y="552" name="inst_10623070" locked="0" code="" scaleX="51" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

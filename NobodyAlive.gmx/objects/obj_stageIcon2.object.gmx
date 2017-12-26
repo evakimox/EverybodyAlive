@@ -55,7 +55,7 @@ instance_create(x,y,obj_stopWalkSound);
     main = instance_nearest(x,y,obj_main);
     main.x=32;
     main.y=280; 
-    room_goto(rm_darkStage1);
+    room_goto(rm_darkBoss);
 }
 </string>
           </argument>

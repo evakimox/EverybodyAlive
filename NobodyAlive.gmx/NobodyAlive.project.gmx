@@ -156,6 +156,7 @@
       <sprite>sprites\spr_stageIcons1</sprite>
       <sprite>sprites\spr_stageIcons2</sprite>
     </sprites>
+    <sprite>sprites\spr_explode</sprite>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="bg_util">
@@ -239,8 +240,9 @@
         <object>objects\obj_spidergreen</object>
         <object>objects\obj_labahua</object>
         <object>objects\obj_slimeKing</object>
-        <object>objects\obj_kmd</object>
         <object>objects\obj_slimeKing2</object>
+        <object>objects\obj_kmd</object>
+        <object>objects\obj_kmd2</object>
       </objects>
       <objects name="castle">
         <object>objects\obj_baseball</object>
