@@ -55,8 +55,6 @@ HPbarRemainingTime = 0;
 
 skill1Ready = true;
 skill2Ready = true;
-
-exclimationMark = noone;
 </string>
           </argument>
         </arguments>

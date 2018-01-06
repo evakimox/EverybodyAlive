@@ -214,6 +214,7 @@ if(state==enemy_state.normal){
     if(collision_check_enemy()){
         state = enemy_state.turn;
     }
+//    enemy_in_radius_normal_move(200);
 }
 
 /*被攻击*/
@@ -246,6 +247,7 @@ if(state == enemy_state.noticed){
 if(state == enemy_state.turn){
     redirect_enemy();
     state = enemy_state.normal;
+//    enemy_in_radius_normal_move(200);
 }
 
 
@@ -389,7 +391,7 @@ else{
 xspd = hspeed;
 yspd = vspeed;
 
-enemy_check_collision();
+check_barrier_collision();
 
 hspeed = xspd;
 vspeed = yspd;
