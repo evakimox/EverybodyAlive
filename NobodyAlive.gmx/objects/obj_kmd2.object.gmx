@@ -55,6 +55,7 @@ HPbarRemainingTime = 0;
 
 skill1Ready = true;
 skill2Ready = true;
+exclimationMark = noone;
 </string>
           </argument>
         </arguments>
@@ -220,10 +221,12 @@ if(state == enemy_state.attacked){
 if(state == enemy_state.noticed){
     reaching_main_char();
     /*叹号跟随怪物*/
-    if(instance_exists(exclimationMark)){
-        exclimationMark.x = (bbox_left+bbox_right)/2;
-        exclimationMark.y = bbox_top-14;
-        exclimationMark.depth = -100;
+    if(exclimationMark != undefined){
+        if(instance_exists(exclimationMark)){
+            exclimationMark.x = (bbox_left+bbox_right)/2;
+            exclimationMark.y = bbox_top-14;
+            exclimationMark.depth = -100;
+        }
     }
 }
 /*转向*/

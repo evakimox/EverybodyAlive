@@ -196,6 +196,7 @@
     <script>scripts\following_the_character_view.gml</script>
     <script>scripts\room_background_radomizer.gml</script>
     <script>scripts\check_barrier_collision.gml</script>
+    <script>scripts\enemy_check_collision.gml</script>
     <script>scripts\swordman_create.gml</script>
     <script>scripts\mage_create.gml</script>
     <script>scripts\blink_once_from_solid.gml</script>
@@ -207,6 +208,7 @@
     <script>scripts\collision_check_enemy.gml</script>
     <script>scripts\enemy_in_radius_normal_move.gml</script>
     <script>scripts\after_attack_in_radius.gml</script>
+    <script>scripts\place_meeting_symmetry.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\ComicSansMS</font>
