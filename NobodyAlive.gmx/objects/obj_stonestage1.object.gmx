@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///这个obj没有骚操作
+            <string>///障碍物自动弹回其他obj
 </string>
           </argument>
         </arguments>

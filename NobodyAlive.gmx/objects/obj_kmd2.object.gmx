@@ -55,6 +55,10 @@ HPbarRemainingTime = 0;
 
 skill1Ready = true;
 skill2Ready = true;
+
+exclimationMark = noone;
+prevState = enemy_state.normal;
+
 </string>
           </argument>
         </arguments>

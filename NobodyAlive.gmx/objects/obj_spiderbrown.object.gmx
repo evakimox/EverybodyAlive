@@ -51,6 +51,10 @@ HPbar.x=bbox_left;
 HPbar.visible=false;
 showHPbar = false;
 HPbarRemainingTime = 0;
+
+exclimationMark = noone;
+prevState = enemy_state.normal;
+
 </string>
           </argument>
         </arguments>
