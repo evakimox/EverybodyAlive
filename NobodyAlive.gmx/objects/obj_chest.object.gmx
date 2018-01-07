@@ -61,7 +61,7 @@ if(bool_left or bool_right or bool_up or bool_down){
         /// create random amount of items dropped
         left_right = random(1)-1;
         up_down = random(1)-1;
-        randNum = random(20);
+        randNum = random(100);
         if(randNum&lt;10){
             chest_object = obj_wand;
         }
