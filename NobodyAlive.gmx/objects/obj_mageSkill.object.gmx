@@ -89,7 +89,9 @@ if(place_meeting(x,y,obj_enemy)){
             hspeed = spd*10*AttackSource*(-1);
             friction =0.1;
         }
-        state = enemy_state.attacked;
+        if(state!=enemy_state.skill1 &amp;&amp; state!=enemy_state.skill2){
+            state = enemy_state.attacked;
+        }
     }
 }
 </string>
