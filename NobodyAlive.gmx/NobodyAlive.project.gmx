@@ -252,6 +252,7 @@
         <object>objects\obj_spiky</object>
         <object>objects\obj_slimedragon</object>
         <object>objects\obj_rockdude</object>
+        <object>objects\obj_rockdude2</object>
       </objects>
       <objects name="dark">
         <object>objects\obj_devil</object>
@@ -325,6 +326,7 @@
     <objects name="bullets">
       <object>objects\obj_labaBullet</object>
       <object>objects\obj_bubble</object>
+      <object>objects\obj_rocks</object>
       <object>objects\obj_spikyBullet</object>
       <objects name="main">
         <object>objects\obj_meleehitbox</object>

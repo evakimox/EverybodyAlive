@@ -58,8 +58,8 @@
     <instance objName="obj_border" x="101" y="360" name="inst_6C1F81A0" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="-3"/>
     <instance objName="obj_border" x="1826" y="359" name="inst_2DAEB877" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="2"/>
     <instance objName="obj_border" x="1001" y="155" name="inst_D3A1ADFB" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rockdude" x="1311" y="328" name="inst_AA233018" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="1071" y="552" name="inst_F34BA2E0" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_rockdude2" x="1265" y="349" name="inst_44FCD225" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
