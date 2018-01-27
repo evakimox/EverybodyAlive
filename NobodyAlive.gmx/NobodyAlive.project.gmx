@@ -114,6 +114,26 @@
         <sprite>sprites\spr_spiky</sprite>
         <sprite>sprites\spr_slimedragon</sprite>
       </sprites>
+      <sprites name="stg3">
+        <sprite>sprites\spr_swdskl</sprite>
+        <sprite>sprites\spr_swdslkAtk</sprite>
+        <sprite>sprites\spr_bowskl</sprite>
+        <sprite>sprites\spr_axeskl</sprite>
+        <sprite>sprites\spr_clyskl</sprite>
+        <sprite>sprites\spr_clysklAtk</sprite>
+        <sprite>sprites\spr_armskl</sprite>
+        <sprite>sprites\spr_doggo</sprite>
+        <sprite>sprites\spr_wolf</sprite>
+        <sprite>sprites\spr_twoHeads</sprite>
+        <sprite>sprites\spr_purpleskl</sprite>
+        <sprite>sprites\spr_redskl</sprite>
+        <sprite>sprites\spr_greenskl</sprite>
+        <sprite>sprites\spr_blueskl</sprite>
+        <sprite>sprites\spr_evilMage</sprite>
+        <sprite>sprites\spr_dragon</sprite>
+        <sprite>sprites\spr_lancer</sprite>
+        <sprite>sprites\spr_saber</sprite>
+      </sprites>
       <sprite>sprites\spr_exclimation</sprite>
       <sprite>sprites\spr_labaBullet</sprite>
       <sprites name="effect">
@@ -184,6 +204,7 @@
       <background>background\bg_darkStageChest</background>
       <background>background\bg_darkStage3</background>
       <background>background\bg_darkBoss</background>
+      <background>background\bg_darkStage4</background>
     </backgrounds>
     <backgrounds name="loading">
       <background>background\bg_load1</background>
@@ -349,8 +370,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_intro</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_intro</room>
     <rooms name="stages">
       <rooms name="forest">
         <room>rooms\rm_stage1</room>

@@ -28,6 +28,7 @@
             <string>///enemy child class setup values
 spr_normal = spr_kmd;
 spr_attacked = spr_kmdAttacked;
+spr_skill = spr_kmdAttacking;
 image_speed = 0.1;
 state = enemy_state.normal;
 
@@ -222,6 +223,7 @@ if(state == enemy_state.attacked){
 }
 /*主人公半径内状态*/
 if(state == enemy_state.noticed){
+    prevState = state;
     reaching_main_char();
     /*叹号跟随怪物*/
     if(instance_exists(exclimationMark)){
@@ -233,43 +235,30 @@ if(state == enemy_state.noticed){
 /*转向*/
 if(state == enemy_state.turn){
     redirect_enemy();
-    enemy_in_radius_normal_move(200);
+    state = prevState;
 }
 
 /*技能1*/
 if(state == enemy_state.skill1){
     if(skill1Ready){
-        sprite_index = spr_kmdAttacking;
+        sprite_index = spr_skill;
         skill1Ready = false;
-        with(instance_place(x,y,obj_main)){
-            hp-=8;
-            instance_create(view_xview[0],view_yview[0],obj_mainAttackedCtrl);
+        main = instance_place(x,y,obj_main);
+        if(main!=noone){
+            with(main){
+                hp-=8;
+                instance_create(view_xview[0],view_yview[0],obj_mainAttackedCtrl);
+            }
         }
     }
-    MaxImages = sprite_get_number(spr_devilSkill1);
+    MaxImages = sprite_get_number(spr_skill);
     /*技能1动画播放完成*/
     if(image_index &gt;= image_number-1){
-        skill1Ready = true;
         state = enemy_state.normal;
+        skill1Ready = true;
     }
 }
 
-/*技能2*/
-if(state == enemy_state.skill2){
-    if(skill2Ready){
-        sprite_index = spr_slimeKingJump;
-        skill2Ready = false;
-    }
-    MaxImages = sprite_get_number(spr_slimeKingJump);
-    /*技能1动画播放完成*/
-    if(image_index &gt;= image_number-1){
-        for(i=0;i&lt;3;i+=1){
-            instance_create(x-(150+50*i),y+50,obj_slime);
-            instance_create(x+(150+50*i),y+50,obj_slime);
-        }
-        state = enemy_state.normal;
-    }
-}
 
 
 </string>

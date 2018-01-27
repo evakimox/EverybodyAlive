@@ -57,9 +57,8 @@
     <instance objName="obj_border" x="1826" y="359" name="inst_2DAEB877" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="2"/>
     <instance objName="obj_border" x="1001" y="155" name="inst_D3A1ADFB" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main" x="685" y="454" name="inst_A65772A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stonestage1" x="791" y="337" name="inst_D38282C8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_slime" x="420" y="319" name="inst_33ECEF75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rockdude2" x="1381" y="340" name="inst_FB26A6D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_slimeKing2" x="1130" y="340" name="inst_17B368A9" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_kmd2" x="355" y="340" name="inst_A69425E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
