@@ -51,6 +51,7 @@
       <sprite>sprites\spr_miniSkeleton</sprite>
       <sprite>sprites\spr_bottles</sprite>
       <sprite>sprites\spr_border</sprite>
+      <sprite>sprites\spr_doorBorder</sprite>
     </sprites>
     <sprites name="skill">
       <sprite>sprites\spr_atk</sprite>
@@ -126,9 +127,13 @@
         <sprite>sprites\spr_wolf</sprite>
         <sprite>sprites\spr_twoHeads</sprite>
         <sprite>sprites\spr_purpleskl</sprite>
+        <sprite>sprites\spr_purpleBullet</sprite>
         <sprite>sprites\spr_redskl</sprite>
+        <sprite>sprites\spr_redBullet</sprite>
         <sprite>sprites\spr_greenskl</sprite>
+        <sprite>sprites\spr_greenBullet</sprite>
         <sprite>sprites\spr_blueskl</sprite>
+        <sprite>sprites\spr_blueBullet</sprite>
         <sprite>sprites\spr_evilMage</sprite>
         <sprite>sprites\spr_dragon</sprite>
         <sprite>sprites\spr_lancer</sprite>
@@ -237,6 +242,7 @@
       <object>objects\obj_border</object>
       <object>objects\obj_stonestage1</object>
       <object>objects\obj_skeleton</object>
+      <object>objects\obj_doorBorder</object>
       <object>objects\obj_ejectBox</object>
       <object>objects\obj_barrel</object>
       <object>objects\obj_brownStone</object>
@@ -370,8 +376,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_test</room>
     <room>rooms\rm_intro</room>
+    <room>rooms\rm_test</room>
     <rooms name="stages">
       <rooms name="forest">
         <room>rooms\rm_stage1</room>
