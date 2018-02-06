@@ -112,6 +112,7 @@
         <sprite>sprites\spr_vestboiAttacked</sprite>
         <sprite>sprites\spr_vestboi</sprite>
         <sprite>sprites\spr_spikyAttacked</sprite>
+        <sprite>sprites\spr_spikyAttacking</sprite>
         <sprite>sprites\spr_spiky</sprite>
         <sprite>sprites\spr_slimedragon</sprite>
       </sprites>
@@ -127,12 +128,16 @@
         <sprite>sprites\spr_wolf</sprite>
         <sprite>sprites\spr_twoHeads</sprite>
         <sprite>sprites\spr_purpleskl</sprite>
+        <sprite>sprites\spr_purplesklAtk</sprite>
         <sprite>sprites\spr_purpleBullet</sprite>
         <sprite>sprites\spr_redskl</sprite>
+        <sprite>sprites\spr_redsklAtk</sprite>
         <sprite>sprites\spr_redBullet</sprite>
         <sprite>sprites\spr_greenskl</sprite>
+        <sprite>sprites\spr_greensklAtk</sprite>
         <sprite>sprites\spr_greenBullet</sprite>
         <sprite>sprites\spr_blueskl</sprite>
+        <sprite>sprites\spr_bluesklAtk</sprite>
         <sprite>sprites\spr_blueBullet</sprite>
         <sprite>sprites\spr_evilMage</sprite>
         <sprite>sprites\spr_dragon</sprite>
@@ -256,6 +261,10 @@
       <object>objects\obj_smolGrass</object>
     </objects>
     <objects name="enemy">
+      <object>objects\obj_testRange</object>
+      <object>objects\obj_testMelee</object>
+      <object>objects\obj_rangedEnemy</object>
+      <object>objects\obj_meleeEnemy</object>
       <object>objects\obj_enemy</object>
       <objects name="forest">
         <object>objects\obj_spidersilver</object>
@@ -284,6 +293,10 @@
       <objects name="dark">
         <object>objects\obj_devil</object>
         <object>objects\obj_devil2</object>
+        <object>objects\obj_redskl</object>
+        <object>objects\obj_blueskl</object>
+        <object>objects\obj_greenskl</object>
+        <object>objects\obj_purpleskl</object>
       </objects>
       <object>objects\obj_enemyHpBar</object>
       <object>objects\obj_enemyHP</object>
@@ -355,6 +368,10 @@
       <object>objects\obj_bubble</object>
       <object>objects\obj_rocks</object>
       <object>objects\obj_spikyBullet</object>
+      <object>objects\obj_redBullet</object>
+      <object>objects\obj_purpleBullet</object>
+      <object>objects\obj_greenBullet</object>
+      <object>objects\obj_blueBullet</object>
       <objects name="main">
         <object>objects\obj_meleehitbox</object>
         <object>objects\obj_mageSkill</object>
@@ -376,8 +393,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_intro</room>
     <room>rooms\rm_test</room>
+    <room>rooms\rm_intro</room>
     <rooms name="stages">
       <rooms name="forest">
         <room>rooms\rm_stage1</room>
