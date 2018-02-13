@@ -134,10 +134,10 @@ if(state == char_state.skill){
     if(AttackFirstEntry){
         AttackFirstEntry = false;
         audio_play_sound(atkSound,12,false);
-        if(global.MainType=="mage"){
+        if(global.MainType=="mage" &amp;&amp; !instance_exists(obj_mageSkill)){
             myHitBox = instance_create(x,y,obj_mageSkill);
         }
-        else if(global.MainType=="sword"){
+        else if(global.MainType=="sword" &amp;&amp; !instance_exists(obj_swordSkill)){
             myHitBox = instance_create(x,y,obj_swordSkill);
         }
         myHitBox.image_speed = 0.2;

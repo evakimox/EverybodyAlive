@@ -238,7 +238,6 @@ if(state==enemy_state.normal){
 /*被攻击*/
 if(state == enemy_state.attacked){   
     sprite_index = spr_attacked;
-    mask_index = spr_normal;
     MaxImages = sprite_get_number(spr_slimeAttacked);
     /*被击动画播放完成*/
     if(image_index &gt;= MaxImages-1 || (hspeed ==0 &amp;&amp; vspeed==0)){

@@ -126,6 +126,7 @@
         <sprite>sprites\spr_armskl</sprite>
         <sprite>sprites\spr_doggo</sprite>
         <sprite>sprites\spr_wolf</sprite>
+        <sprite>sprites\spr_wolfAtk</sprite>
         <sprite>sprites\spr_twoHeads</sprite>
         <sprite>sprites\spr_purpleskl</sprite>
         <sprite>sprites\spr_purplesklAtk</sprite>
@@ -140,6 +141,7 @@
         <sprite>sprites\spr_bluesklAtk</sprite>
         <sprite>sprites\spr_blueBullet</sprite>
         <sprite>sprites\spr_evilMage</sprite>
+        <sprite>sprites\spr_evilMageAtk</sprite>
         <sprite>sprites\spr_dragon</sprite>
         <sprite>sprites\spr_lancer</sprite>
         <sprite>sprites\spr_saber</sprite>
@@ -297,6 +299,18 @@
         <object>objects\obj_blueskl</object>
         <object>objects\obj_greenskl</object>
         <object>objects\obj_purpleskl</object>
+        <object>objects\obj_swdskl</object>
+        <object>objects\obj_bowskl</object>
+        <object>objects\obj_clyskl</object>
+        <object>objects\obj_axeskl</object>
+        <object>objects\obj_armskl</object>
+        <object>objects\obj_doggo</object>
+        <object>objects\obj_wolf</object>
+        <object>objects\obj_twoHeads</object>
+        <object>objects\obj_evilMage</object>
+        <object>objects\obj_dragon</object>
+        <object>objects\obj_lancer</object>
+        <object>objects\obj_saber</object>
       </objects>
       <object>objects\obj_enemyHpBar</object>
       <object>objects\obj_enemyHP</object>

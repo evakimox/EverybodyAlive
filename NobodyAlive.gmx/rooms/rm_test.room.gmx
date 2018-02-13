@@ -58,7 +58,7 @@
     <instance objName="obj_border" x="1001" y="155" name="inst_D3A1ADFB" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_main" x="685" y="454" name="inst_A65772A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_testRange" x="1020" y="339" name="inst_1853AF14" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_testMelee" x="409" y="330" name="inst_E966B2BA" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_testMelee" x="297" y="336" name="inst_04F77A8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
