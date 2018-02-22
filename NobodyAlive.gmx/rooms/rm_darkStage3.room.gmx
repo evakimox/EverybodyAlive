@@ -3,25 +3,14 @@
   <caption></caption>
   <width>1920</width>
   <height>540</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
   <colour>12615935</colour>
   <showcolour>0</showcolour>
-  <code>///room bg rangomizer
-random_set_seed(current_time);
-bg_chooser = floor(random(61));
-if(bg_chooser&lt;=20){
-    background_index = bg_castle1;
-}
-else if(bg_chooser&gt;20&amp;&amp;bg_chooser&lt;=40){
-    background_index = bg_castle2;
-}
-else{
-    background_index = bg_castle3;
-}</code>
+  <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -63,7 +52,29 @@ else{
   </views>
   <instances>
     <instance objName="obj_createHPbar" x="640" y="64" name="inst_CF638AA6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_stageDoor" x="1568" y="256" name="inst_7D0F1AF9" locked="0" code="DoorDestination = rm_bossStage;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="955" y="96" name="inst_1C5C2011" locked="0" code="" scaleX="100.150001525879" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="961" y="170" name="inst_E9A3137A" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="829" y="131" name="inst_0320675C" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1091" y="133" name="inst_9D520226" locked="0" code="" scaleX="1" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="963" y="494" name="inst_5D3EDEC0" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="17" y="305" name="inst_9D384EA1" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1902" y="291" name="inst_184D49B2" locked="0" code="" scaleX="1" scaleY="21" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="961" y="369" name="inst_1A0862F3" locked="0" code="" scaleX="14" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="830" y="428" name="inst_4BB5FE93" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_border" x="1092" y="426" name="inst_DA2045C6" locked="0" code="" scaleX="1" scaleY="7" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bornPosition" x="141" y="286" name="inst_24F00272" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bottles" x="92" y="446" name="inst_0BEA7F0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bottles" x="1827" y="431" name="inst_A63C6D29" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_redskl" x="401" y="229" name="inst_4696ACD5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blueskl" x="493" y="339" name="inst_A8E53B41" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_purpleskl" x="530" y="179" name="inst_6CF76C3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_greenskl" x="614" y="313" name="inst_58EF8DED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_clyskl" x="893" y="271" name="inst_43AF636D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_clyskl" x="1459" y="192" name="inst_1E71D3F9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dragon" x="1736" y="208" name="inst_5E2551E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_blueskl" x="1608" y="360" name="inst_D63699D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_evilMage" x="1279" y="372" name="inst_92379E11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_stageDoor" x="1907" y="202" name="inst_57C689E3" locked="0" code="DoorDestination = rm_darkChest;&#xA;DestRoomx=32;&#xA;DestRoomy=280; &#xA;" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

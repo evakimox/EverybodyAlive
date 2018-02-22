@@ -407,8 +407,8 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_init</room>
-    <room>rooms\rm_test</room>
     <room>rooms\rm_intro</room>
+    <room>rooms\rm_test</room>
     <rooms name="stages">
       <rooms name="forest">
         <room>rooms\rm_stage1</room>

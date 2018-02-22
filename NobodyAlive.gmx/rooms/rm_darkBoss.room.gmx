@@ -58,6 +58,7 @@
     <instance objName="obj_border" x="956" y="494" name="inst_7E0D71D2" locked="0" code="" scaleX="100" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="19" y="310" name="inst_27026E52" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
     <instance objName="obj_border" x="1901" y="307" name="inst_B542FD38" locked="0" code="" scaleX="1" scaleY="25" colour="4294967295" rotation="0"/>
+    <instance objName="obj_bornPosition" x="123" y="313" name="inst_1B4B7A4C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
